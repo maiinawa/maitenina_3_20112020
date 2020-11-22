@@ -27,10 +27,11 @@
         padding: 0px 12% 0% 12%;
         margin: 0;
     }
-    button{
+    a{
+        @include button-pink;
         margin-top: 30px;
+        padding: 18px 0px;
         width: 218px;
-        margin: auto;
     }
 }
 

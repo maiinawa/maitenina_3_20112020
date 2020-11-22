@@ -24,10 +24,11 @@ p {
 }
 
 header {
+  position: relative;
   height: 62px;
   background-color: #ffffff;
   width: 100%;
-  box-shadow: 0px 3px 6px 0px red;
+  box-shadow: 0px 3px 6px 0px #cfcfcf;
 }
 header .logo {
   padding-top: 20px;
@@ -57,15 +58,6 @@ footer .fa-ul .fa-ul li {
 footer .fa-ul .footer_list_no-puce {
   list-style: none;
   margin-left: -25px;
-}
-
-.button-pink {
-  background-color: #FF79DA;
-  color: white;
-  padding: 18px 0px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 50px;
 }
 
 .heart_shape {
@@ -218,6 +210,198 @@ footer .fa-ul .footer_list_no-puce {
   position: absolute;
   bottom: 32px;
   right: 26px;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localisation .search-bar {
+  font-size: 4vw;
+  width: 37%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-left: 15px;
+  padding: 0;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+  padding: 44px 19px 57px 19px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.presentation h1 {
+  font-size: 6vw;
+  padding: 0px 12% 0% 12%;
+  margin: 0;
+}
+.presentation a {
+  background-color: #FF79DA;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 18px 0px;
+  width: 218px;
+}
+
+.fonctionnement {
+  background-color: #ffffff;
+  padding: 53px 19px 42px 19px;
+}
+.fonctionnement h2 {
+  margin: 0;
+  padding: 0px 0px 30px 0px;
+}
+.fonctionnement .fonctionnement_mosaic {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.fonctionnement .fonctionnement_bloc {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f6f6f6;
+  margin: 0px 0px 26px 10px;
+  height: 75px;
+  width: 96.5%;
+  border-radius: 25px;
+  align-items: center;
+  position: relative;
+}
+.fonctionnement .fonctionnement_bloc .fonctionnement_numero {
+  position: absolute;
+  background-color: #9356DC;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  left: -10px;
+  text-align: center;
+  line-height: 23px;
+}
+.fonctionnement .fonctionnement_bloc .fonctionnement_numero span {
+  color: white;
+}
+.fonctionnement .fonctionnement_bloc i, .fonctionnement .fonctionnement_bloc .fonctionnement_bloc_text {
+  margin: 0px 0px 0px 30px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 58px 19px 64px 19px;
+  background-color: #f6f6f6;
+}
+.restaurants h2 {
+  margin: 0;
+  padding: 0px 0px 30px 0px;
+}
+.restaurants .restaurants_mosaic_cards {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.restaurants .restaurants_mosaic_cards img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 173px;
+  object-fit: cover;
+}
+.restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag {
+  z-index: 2;
+  position: absolute;
+  top: 13px;
+  right: 11px;
+  width: 79px;
+  border-radius: 5px;
+  color: #008766;
+  background-color: #99e2d0;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+.restaurants .restaurants_mosaic_cards .restaurants_mosaic_cards_text {
+  padding: 15px 0px 15px 14px;
+  margin: 0;
+}
+.restaurants .restaurants_mosaic_cards h3, .restaurants .restaurants_mosaic_cards p {
+  margin: 0px;
+}
+
+.menu_img {
+  height: 260px;
+  object-fit: cover;
+}
+.menu_carte {
+  box-sizing: border-box;
+  padding: 40px 12px 57px 12px;
+  width: 100%;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: pink;
+}
+.menu_carte-top-align {
+  background-color: violet;
+  align-items: center;
+  padding: 5px 25px 0px 0px;
+  font-family: "Shrikhand";
+  display: flex;
+  justify-content: space-between;
+}
+.menu_categories {
+  padding: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.menu_categories-title {
+  margin: 0px 0px 25px 0px;
+}
+.menu_block {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 0px 0px 15px 0px;
+  border-radius: 15px;
+}
+.menu_block_text {
+  position: relative;
+  width: 83%;
+  padding: 16px 14px;
+  white-space: nowrap;
+}
+.menu_block_price {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  background-color: green;
+}
+.menu_block_validation {
+  display: none;
+  text-align: center;
+  background-color: red;
+  width: 17%;
+}
+.menu_button {
+  background-color: #FF79DA;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0px;
+  margin: 0px 81px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,66 @@
+.menu{
+
+    &_img{
+        height: 260px;
+        object-fit: cover;
+    }
+    &_carte{
+        box-sizing: border-box;
+        padding: 40px 12px 57px 12px;
+        width: 100%;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        background-color: pink;
+    }
+    &_carte-top-align{
+        background-color: violet;
+        align-items: center;
+        padding: 5px 25px 0px 0px;
+        font-family:'Shrikhand';
+        display: flex;
+        justify-content: space-between;
+    }
+    &_categories{
+        padding: 40px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        &-title{
+            margin: 0px 0px 25px 0px;
+        }
+    }
+    &_block{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        margin: 0px 0px 15px 0px;
+        border-radius: 15px;
+        &_text{
+            position: relative;
+            width: 83%;
+            padding: 16px 14px;
+            white-space: nowrap;
+
+        }
+        &_price{
+            position: absolute;
+            right:0;
+            bottom: 16px;
+            background-color: green;
+        }
+        &_validation{
+            display: none;
+            text-align: center;
+            background-color: red;
+            width: 17%;
+        }
+    }
+    &_button{
+        @include button-pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 0px;
+        margin: 0px 81px;
+    }
+}
+ 
