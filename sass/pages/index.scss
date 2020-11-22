@@ -1,0 +1,108 @@
+.localisation{
+    background-color: $localisation-bar_background-color;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search-bar{
+        font-size: 4vw;
+        width: 37%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        margin-left: 15px;
+        padding: 0;
+    }
+}
+
+.presentation{
+    background-color: $grey;
+    padding: 44px 19px 57px 19px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    h1{
+        font-size: 6vw;
+        padding: 0px 12% 0% 12%;
+        margin: 0;
+    }
+    button{
+        margin-top: 30px;
+        width: 218px;
+        margin: auto;
+    }
+}
+
+.fonctionnement{
+    background-color: $white;
+    padding: 53px 19px 42px 19px;
+    h2{
+        margin: 0;
+        padding: 0px 0px 30px 0px;
+    }
+    .fonctionnement_mosaic{
+        display: flex;
+        flex-direction: column;
+        margin-left:auto;
+    }
+    .fonctionnement_bloc{
+        @include div-squarred-shadow();
+        .fonctionnement_numero{
+            @include circle();
+            span{
+                color: white;
+            }
+        }
+        i, .fonctionnement_bloc_text{
+            margin: 0px 0px 0px 30px;
+        }
+    }
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    padding: 58px 19px 64px 19px;
+    background-color: $grey;
+    h2{
+        margin: 0;
+        padding: 0px 0px 30px 0px;
+    }
+    .restaurants_mosaic_cards{
+        position: relative;
+        z-index: 1;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        border-radius: 15px;
+
+        img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 173px;
+            object-fit: cover;
+        }
+        .restaurants_mosaic_newtag{
+            z-index: 2;
+            position: absolute;
+            top: 13px;
+            right: 11px;
+            width: 79px;
+            border-radius: 5px;
+            color: #008766;
+            background-color: #99e2d0;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+        }
+        .restaurants_mosaic_cards_text{
+            padding: 15px 0px 15px 14px;
+            margin: 0;
+        }
+        h3, p{
+            margin: 0px;
+        }
+    }
+
+}
