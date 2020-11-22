@@ -9,6 +9,33 @@
   border-radius: 50px;
 }
 
+.heart_shape {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 1px solid black;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.heart_shape:before, .heart_shape:after {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+}
+
+.heart_shape::before {
+  left: -7.5px;
+}
+
+.heart_shape:after {
+  top: -7.5px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -161,6 +188,12 @@ header .logo {
 }
 .restaurants .restaurants_mosaic_cards .restaurants_mosaic_cards_text {
   padding: 19px 0px 19px 14px;
+}
+.restaurants .restaurants_mosaic_cards .heart_container {
+  z-index: 3;
+  position: absolute;
+  bottom: 32px;
+  right: 26px;
 }
 
 footer {
