@@ -1,5 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+p {
+  font-size: 4.5vw;
+}
+
+header {
+  height: 62px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0px 3px 6px 0px red;
+}
+header .logo {
+  padding-top: 20px;
+  height: 28px;
+  margin: auto;
+}
+
+footer {
+  padding: 26px 19px 20px 24px;
+  background-color: #353535;
+  color: white;
+}
+footer .footer_elements_bold {
+  font-family: "Shrikhand";
+  font-size: 5vw;
+}
+footer a {
+  color: white;
+}
+footer .fa-ul {
+  margin-left: 25px;
+  line-height: 1.8;
+}
+footer .fa-ul .fa-ul li {
+  padding-left: 5px;
+}
+footer .fa-ul .footer_list_no-puce {
+  list-style: none;
+  margin-left: -25px;
+}
+
 .button-pink {
   background-color: #FF79DA;
   color: white;
@@ -34,41 +93,6 @@
 
 .heart_shape:after {
   top: -7.5px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-h1, h2, h3, h4, p {
-  margin: 0;
-}
-
-p {
-  font-size: 4.5vw;
-}
-
-header {
-  height: 62px;
-  background-color: #ffffff;
-  width: 100%;
-  box-shadow: 0px 3px 6px 0px red;
-}
-header .logo {
-  padding-top: 20px;
-  height: 28px;
-  margin: auto;
 }
 
 .localisation {
@@ -194,30 +218,6 @@ header .logo {
   position: absolute;
   bottom: 32px;
   right: 26px;
-}
-
-footer {
-  padding: 26px 19px 20px 24px;
-  background-color: #353535;
-  color: white;
-}
-footer .footer_elements_bold {
-  font-family: "Shrikhand";
-  font-size: 5vw;
-}
-footer a {
-  color: white;
-}
-footer .fa-ul {
-  margin-left: 25px;
-  line-height: 1.8;
-}
-footer .fa-ul .fa-ul li {
-  padding-left: 5px;
-}
-footer .fa-ul .footer_list_no-puce {
-  list-style: none;
-  margin-left: -25px;
 }
 
 /*# sourceMappingURL=style.css.map */
