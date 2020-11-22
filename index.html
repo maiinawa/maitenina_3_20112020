@@ -4,6 +4,8 @@
     <head>
         <meta charset= "utf-8" />
         <meta name="viewport" content="width=375, maximum-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+
 
         <script src="https://kit.fontawesome.com/79d9690799.js" crossorigin="anonymous"></script>
     </head>
@@ -11,65 +13,81 @@
     <body>
 
         <header>
-            <a href="#"><img src="images/logo/ohmyfood@2x.svg"></a>
+            <a href="#"><img class="logo" src="images/logo/ohmyfood@2x.svg"></a>
         </header>
 
         <main>
             <div class="localisation">
 
-                <i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Paris, Belleville">
+                <i class="fas fa-map-marker-alt"></i><input type="search" class="search-bar" placeholder="Paris, Belleville">
 
             </div>
 
-            <section class=presentation>
+            <section class="principal-layout">
 
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button><a href="#restaurants">Explorer nos restaurants</a></button>
+                <section class=presentation>
 
-            </section>
+                    <h1 class="presentation_slogan">Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <button class="button_pink"><a href="#restaurants">Explorer nos restaurants</a></button>
 
-            <section class="fonctionnement">
+                </section>
 
-                <h3>Fonctionnement</h3>
-                <div class="fonctionnement_bloc"><div class="fonctionnement_numero">1</div>Choisissez un restaurant</div>
-                <div class="fonctionnement_bloc"><div class="fonctionnement_numero">2</div>Composez votre menu</div>
-                <div class="fonctionnement_bloc"><div class="fonctionnement_numero">3</div>Dégustez au restaurant</div>
-                
+                <section class="fonctionnement">
+
+                    <h2>Fonctionnement</h2>
+                    <div class="fonctionnement_mosaic">
+                        <div class="fonctionnement_bloc"><div class="fonctionnement_numero"><span>1</span></div><i class="fas fa-mobile-alt"></i><span class="fonctionnement_bloc_text">Choisissez un restaurant</span></div>
+                        <div class="fonctionnement_bloc"><div class="fonctionnement_numero"><span>2</span></div><i class="fas fa-list-ul"></i><span class="fonctionnement_bloc_text">Composez votre menu</span></div>
+                        <div class="fonctionnement_bloc"><div class="fonctionnement_numero"><span>3</span></div><i class="fas fa-store"></i><span class="fonctionnement_bloc_text">Dégustez au restaurant</span></div>
+                    </div>
+
+                </section>
             </section>
 
             <section class="restaurants">
 
-                <h3>Restaurants</h3>
+                <h2>Restaurants</h2>
                 <div class="restaurants_mosaic">
 
                     <article class="restaurants_mosaic_cards"><a href="la-palette-du-gout.html">
-                        <img src="images/restaurants/lapalettedugout.jpg">
+                        <img class="restaurants-img" src="images/restaurants/lapalettedugout.jpg">
                         <div class="restaurants_mosaic_newtag">Nouveau</div>
-                        <h4>La palette du goût</h4>
-                        <p>Ménilmontant</p>
+                        <div class="restaurants_mosaic_cards_text">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
                         <div class="heart"></div>
                     </a></article>
 
                     <article class="restaurants_mosaic_cards"><a href="la-note-enchantee.html">
-                        <img src="images/restaurants/lanoteenchantee.jpg">
+                        <img class="restaurants-img" src="images/restaurants/lanoteenchantee.jpg">
                         <div class="restaurants_mosaic_newtag">Nouveau</div>
-                        <h4>La note enchantée</h4>
-                        <p>Charonne</p>
+                        <div class="restaurants_mosaic_cards_text">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+
                         <div class="heart"></div>
                     </a></article>
 
                     <article class="restaurants_mosaic_cards"><a href="a-la-francaise.html">
-                        <img src="images/restaurants/alafrancaise.jpg">
-                        <h4>A la française</h4>
-                        <p>Cité Rouge</p>
+                        <img class="restaurants-img" src="images/restaurants/alafrancaise.jpg">
+                        <div class="restaurants_mosaic_cards_text">
+                            <h3>A la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+
                         <div class="heart"></div>
                     </a></article>
 
                     <article class="restaurants_mosaic_cards"><a href="le-delice-des-sens.html">
-                        <img src="images/restaurants/ledelicedessens.jpg">
-                        <h4>Le délice des sens</h4>
-                        <p>Folie-Méricourt</p>
+                        <img class="restaurants-img" src="images/restaurants/ledelicedessens.jpg">
+                        <div class="restaurants_mosaic_cards_text">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+
                         <div class="heart"></div>
                     </a></article>
 
@@ -83,11 +101,11 @@
 
             <p class="footer_elements_bold">ohmyfood</p>
 
-            <ul class="footer">
-                <li><a href="">Proposer un restaurant</a></li>
-                <li><a href="">Devenir partenaire</a></li>
-                <li><a href="">Mentions légales</a></li>
-                <li><a href="">Contact</a></li>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-utensils"></i></span><a href="">Proposer un restaurant</a></li>
+                <li><span class="fa-li"><i class="fas fa-hands-helping fa-xs"></i></span><a href=""> Devenir partenaire</a></li>
+                <li class="footer_list_no-puce"><a href="">Mentions légales</a></li>
+                <li class="footer_list_no-puce"><a href="">Contact</a></li>
             </ul>
             
         </footer>
