@@ -1,0 +1,36 @@
+header{
+    height: 62px;
+    background-color: $white;
+    width: 100%;
+    box-shadow: 0px 3px 6px 0px red;
+    .logo{
+        padding-top: 20px;
+        height: 28px;
+        margin: auto;
+    }
+}
+
+footer{
+    padding: 26px 19px 20px 24px;
+
+    background-color: $footer_background-color;
+    color: white;
+    .footer_elements_bold{
+        font-family: 'Shrikhand';
+        font-size: 5vw;
+    }
+    a{
+        color: white;
+    }
+    .fa-ul{
+        margin-left: 25px;
+        line-height: 1.8;
+        .fa-ul li{
+            padding-left: 5px;
+        }
+        .footer_list_no-puce{
+        list-style: none;
+        margin-left: -25px;
+        }
+    }
+}

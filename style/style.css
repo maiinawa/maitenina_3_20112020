@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.button_pink {
-  height: 50px;
-  border-radius: 50px;
-  background-color: #FF79DA;
-  border: 0px;
-  outline: none;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +13,10 @@ img {
 a {
   text-decoration: none;
   color: black;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
 }
 
 p {
@@ -37,6 +33,66 @@ header .logo {
   padding-top: 20px;
   height: 28px;
   margin: auto;
+}
+
+footer {
+  padding: 26px 19px 20px 24px;
+  background-color: #353535;
+  color: white;
+}
+footer .footer_elements_bold {
+  font-family: "Shrikhand";
+  font-size: 5vw;
+}
+footer a {
+  color: white;
+}
+footer .fa-ul {
+  margin-left: 25px;
+  line-height: 1.8;
+}
+footer .fa-ul .fa-ul li {
+  padding-left: 5px;
+}
+footer .fa-ul .footer_list_no-puce {
+  list-style: none;
+  margin-left: -25px;
+}
+
+.button-pink {
+  background-color: #FF79DA;
+  color: white;
+  padding: 18px 0px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.heart_shape {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 1px solid black;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.heart_shape:before, .heart_shape:after {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+}
+
+.heart_shape::before {
+  left: -7.5px;
+}
+
+.heart_shape:after {
+  top: -7.5px;
 }
 
 .localisation {
@@ -65,13 +121,15 @@ header .logo {
 }
 .presentation h1 {
   font-size: 6vw;
-  padding: 0px 12% 0% 12%;
+  padding: 0px 12% 21px 12%;
   margin: 0;
 }
-.presentation button {
-  margin-top: 30px;
-  width: 218px;
+.presentation p {
+  padding: 0px 0px 31px 0px;
+}
+.presentation a {
   margin: auto;
+  width: 218px;
 }
 
 .fonctionnement {
@@ -153,31 +211,13 @@ header .logo {
   padding: 10px 10px 10px 10px;
 }
 .restaurants .restaurants_mosaic_cards .restaurants_mosaic_cards_text {
-  padding: 15px 0px 15px 14px;
-  margin: 0;
+  padding: 19px 0px 19px 14px;
 }
-.restaurants .restaurants_mosaic_cards h3, .restaurants .restaurants_mosaic_cards p {
-  margin: 0px;
-}
-
-footer {
-  padding: 26px 19px 20px 24px;
-  background-color: #353535;
-  color: white;
-}
-footer a {
-  color: white;
-}
-footer .fa-ul {
-  margin-left: 25px;
-  line-height: 1.8;
-}
-footer .fa-ul .fa-ul li {
-  padding-left: 5px;
-}
-footer .fa-ul .footer_list_no-puce {
-  list-style: none;
-  margin-left: -25px;
+.restaurants .restaurants_mosaic_cards .heart_container {
+  z-index: 3;
+  position: absolute;
+  bottom: 32px;
+  right: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */
