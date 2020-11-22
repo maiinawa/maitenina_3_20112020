@@ -35,16 +35,14 @@ $footer_background-color: #353535;
     line-height: 23px;
 }
 
-.button_pink{
-    height: 50px;
-    border-radius: 50px;
+.button-pink{
     background-color: $secondary-color;
-    border: 0px;
-    outline: none;
+    color: white;
+    padding: 18px 0px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
 }
-
-
-
 
 
 body{
@@ -61,6 +59,10 @@ img{
 a{
     text-decoration: none;
     color: black;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
 }
 
 
@@ -108,13 +110,16 @@ header{
     
     h1{
         font-size: 6vw;
-        padding: 0px 12% 0% 12%;
+        padding: 0px 12% 21px 12%;
         margin: 0;
     }
-    button{
-        margin-top: 30px;
-        width: 218px;
+    p{
+        padding: 0px 0px 31px 0px; 
+    }
+    a{
         margin: auto;
+        width: 218px;
+
     }
 }
 
@@ -181,14 +186,9 @@ header{
             padding: 10px 10px 10px 10px;
         }
         .restaurants_mosaic_cards_text{
-            padding: 15px 0px 15px 14px;
-            margin: 0;
-        }
-        h3, p{
-            margin: 0px;
+            padding: 19px 0px 19px 14px;
         }
     }
-
 }
 
 footer{
@@ -196,6 +196,10 @@ footer{
 
     background-color: $footer_background-color;
     color: white;
+    .footer_elements_bold{
+        font-family: 'Shrikhand';
+        font-size: 5vw;
+    }
     a{
         color: white;
     }
