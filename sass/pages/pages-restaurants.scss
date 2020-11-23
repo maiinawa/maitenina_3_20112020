@@ -1,3 +1,10 @@
+.goback{
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    color: #353535;
+}
+
 .menu{
 
     &_img{
@@ -45,7 +52,6 @@
             position: absolute;
             right:0;
             bottom: 16px;
-            background-color: green;
         }
         &_validation{
             display: none;
@@ -60,7 +66,7 @@
         align-items: center;
         justify-content: center;
         padding: 18px 0px;
-        margin: 0px 81px;
+        margin: 35px 81px 15px 81px;
     }
 }
  

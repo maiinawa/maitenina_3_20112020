@@ -21,17 +21,11 @@
     line-height: 23px;
 }
 
-@mixin heart-specs{
-    width: 15px;
-    height: 15px;
-    background-color: red;
-    border: 1px solid black;
-}
-
 @mixin button-pink{
     background-color: $secondary-color;
     color: white;
     text-decoration: none;
     display: inline-block;
     border-radius: 50px;
+    margin: auto;
 }

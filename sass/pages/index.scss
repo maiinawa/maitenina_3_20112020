@@ -101,9 +101,12 @@
             padding: 15px 0px 15px 14px;
             margin: 0;
         }
-        h3, p{
-            margin: 0px;
+        .restaurants_mosaic_cards_heart_container{
+            position: absolute;
+            bottom: 32px;
+            right: 26px;
         }
+
     }
 
 }
