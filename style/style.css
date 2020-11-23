@@ -23,7 +23,14 @@ p {
   font-size: 4.5vw;
 }
 
-.heart-solid {
+.heart-solid-container {
+  display: none;
+}
+
+.heart-container:hover .heart-solid-container {
+  display: block;
+}
+.heart-container:hover .heart-empty-container {
   display: none;
 }
 
@@ -186,10 +193,10 @@ footer .fa-ul .footer_list_no-puce {
   padding: 15px 0px 15px 14px;
   margin: 0;
 }
-.restaurants .restaurants_mosaic_cards .restaurants_mosaic_cards_heart_container {
+.restaurants .restaurants_mosaic_cards .cards_heart_container {
   position: absolute;
   bottom: 32px;
-  right: 26px;
+  right: 16px;
 }
 
 .goback {

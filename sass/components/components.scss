@@ -1,3 +1,12 @@
-.heart-solid{
+.heart-solid-container{
     display: none;
+}
+
+.heart-container:hover{
+    .heart-solid-container{
+    display: block;
+    }
+    .heart-empty-container{
+        display: none;
+    }
 }
