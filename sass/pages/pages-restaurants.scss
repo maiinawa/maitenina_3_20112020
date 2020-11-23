@@ -20,7 +20,6 @@
         background-color: pink;
     }
     &_carte-top-align{
-        background-color: violet;
         align-items: center;
         padding: 5px 25px 0px 0px;
         font-family:'Shrikhand';
@@ -28,11 +27,18 @@
         justify-content: space-between;
     }
     &_categories{
+        position: relative;
         padding: 40px 0px 0px 0px;
         display: flex;
         flex-direction: column;
-        &-title{
+        &_title{
             margin: 0px 0px 25px 0px;
+        }
+        &_underline{
+            position: absolute;
+            top: 65px;
+            border-top : 3px solid $third-color;
+            width: 40px;
         }
     }
     &_block{
@@ -44,20 +50,27 @@
         &_text{
             position: relative;
             width: 83%;
-            padding: 16px 14px;
+            padding: 10px 14px;
             white-space: nowrap;
 
         }
         &_price{
             position: absolute;
             right:0;
-            bottom: 16px;
+            bottom: 10px;
         }
         &_validation{
-            display: none;
+            margin-left: 20px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
             text-align: center;
-            background-color: red;
-            width: 17%;
+            background-color: $third-color;
+            width: 19%;
+            i{
+                padding-top: 22px;
+                color: white;
+
+            }
         }
     }
     &_button{

@@ -219,7 +219,6 @@ footer .fa-ul .footer_list_no-puce {
   background-color: pink;
 }
 .menu_carte-top-align {
-  background-color: violet;
   align-items: center;
   padding: 5px 25px 0px 0px;
   font-family: "Shrikhand";
@@ -227,12 +226,19 @@ footer .fa-ul .footer_list_no-puce {
   justify-content: space-between;
 }
 .menu_categories {
+  position: relative;
   padding: 40px 0px 0px 0px;
   display: flex;
   flex-direction: column;
 }
-.menu_categories-title {
+.menu_categories_title {
   margin: 0px 0px 25px 0px;
+}
+.menu_categories_underline {
+  position: absolute;
+  top: 65px;
+  border-top: 3px solid #99E2D0;
+  width: 40px;
 }
 .menu_block {
   display: flex;
@@ -244,19 +250,25 @@ footer .fa-ul .footer_list_no-puce {
 .menu_block_text {
   position: relative;
   width: 83%;
-  padding: 16px 14px;
+  padding: 10px 14px;
   white-space: nowrap;
 }
 .menu_block_price {
   position: absolute;
   right: 0;
-  bottom: 16px;
+  bottom: 10px;
 }
 .menu_block_validation {
-  display: none;
+  margin-left: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   text-align: center;
-  background-color: red;
-  width: 17%;
+  background-color: #99E2D0;
+  width: 19%;
+}
+.menu_block_validation i {
+  padding-top: 22px;
+  color: white;
 }
 .menu_button {
   background-color: #FF79DA;
