@@ -28,7 +28,7 @@
     display: inline-block;
     border-radius: 50px;
     margin: auto;
-    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.17);        
+    @include box-shadow();      
 
 }
 
@@ -51,5 +51,8 @@
 
 @mixin heart-color {
     color: linear-gradient($secondary-color, $primary-color);
+}
 
+@mixin box-shadow{
+    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.08);        
 }
