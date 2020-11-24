@@ -44,29 +44,38 @@
     &_block{
         display: flex;
         justify-content: space-between;
-        background-color: white;
         margin: 0px 0px 15px 0px;
+        background-color: white;
         border-radius: 15px;
+
+
         &_text{
+
             position: relative;
-            width: 83%;
+            width: 100%;
             padding: 10px 14px;
             white-space: nowrap;
 
         }
         &_price{
             position: absolute;
-            right:0;
+            right: 20px;
             bottom: 10px;
         }
         &_validation{
             display:none;
-            margin-left: 20px;
+
+
+
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             text-align: center;
             background-color: $third-color;
             width: 19%;
+            
+    
+
+
             i{
                 padding-top: 22px;
                 color: white;
@@ -87,8 +96,24 @@
 }
 input[type="checkbox"]{
     display:none;
-    &:checked + .menu_block_validation,{
+    &:hover + .menu_block_validation{
+         transition-duration: 1.5s;
+        animation: slide-out 0.2s forwards; 
+        display:block; 
+    }
+    &:checked + .menu_block_validation{
+      
         display:block;
+
     }
 }
-label{background-color: red;}
+
+
+@keyframes slide {
+    0%{
+        left: 0px; /*1ère image*/
+    }
+    100% {
+        left: -60px; /*3ème image*/
+    }
+}
