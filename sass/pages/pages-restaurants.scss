@@ -60,6 +60,7 @@
             bottom: 10px;
         }
         &_validation{
+            display:none;
             margin-left: 20px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -73,13 +74,20 @@
             }
         }
     }
-    &_button{
+    .menu_button{
         @include button-pink;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 18px 0px;
-        margin: 35px 81px 15px 81px;
+        padding: 18px 40px;
+        margin: 35px auto 15px auto;
+        outline: none;
+        border: none;
     }
 }
- 
+#tartare{
+    display:none;
+    &:checked + .menu_block_validation{
+        display:block;
+    }
+}

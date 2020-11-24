@@ -259,6 +259,7 @@ footer .fa-ul .footer_list_no-puce {
   bottom: 10px;
 }
 .menu_block_validation {
+  display: none;
   margin-left: 20px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -270,7 +271,7 @@ footer .fa-ul .footer_list_no-puce {
   padding-top: 22px;
   color: white;
 }
-.menu_button {
+.menu .menu_button {
   background-color: #FF79DA;
   color: white;
   text-decoration: none;
@@ -280,8 +281,17 @@ footer .fa-ul .footer_list_no-puce {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px 0px;
-  margin: 35px 81px 15px 81px;
+  padding: 18px 40px;
+  margin: 35px auto 15px auto;
+  outline: none;
+  border: none;
+}
+
+#tartare {
+  display: none;
+}
+#tartare:checked + .menu_block_validation {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,3 +29,17 @@
     border-radius: 50px;
     margin: auto;
 }
+
+@mixin valid{
+        margin-left: 20px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        background-color: $third-color;
+        width: 19%;
+}
+@mixin valid-i{
+    padding-top: 22px;
+    color: white;
+
+}
