@@ -226,17 +226,17 @@ footer .fa-ul .footer_list_no-puce {
   justify-content: space-between;
 }
 .menu_categories {
-  position: relative;
   padding: 40px 0px 0px 0px;
   display: flex;
   flex-direction: column;
 }
 .menu_categories_title {
+  position: relative;
   margin: 0px 0px 25px 0px;
 }
 .menu_categories_underline {
   position: absolute;
-  top: 65px;
+  bottom: -9px;
   border-top: 3px solid #99E2D0;
   width: 40px;
 }
@@ -287,11 +287,15 @@ footer .fa-ul .footer_list_no-puce {
   border: none;
 }
 
-#tartare {
+input[type=checkbox] {
   display: none;
 }
-#tartare:checked + .menu_block_validation {
+input[type=checkbox]:checked + .menu_block_validation {
   display: block;
+}
+
+label {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

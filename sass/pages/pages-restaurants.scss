@@ -27,16 +27,16 @@
         justify-content: space-between;
     }
     &_categories{
-        position: relative;
         padding: 40px 0px 0px 0px;
         display: flex;
         flex-direction: column;
         &_title{
+            position: relative;
             margin: 0px 0px 25px 0px;
         }
         &_underline{
             position: absolute;
-            top: 65px;
+            bottom: -9px;
             border-top : 3px solid $third-color;
             width: 40px;
         }
@@ -85,9 +85,10 @@
         border: none;
     }
 }
-#tartare{
+input[type="checkbox"]{
     display:none;
-    &:checked + .menu_block_validation{
+    &:checked + .menu_block_validation,{
         display:block;
     }
 }
+label{background-color: red;}
