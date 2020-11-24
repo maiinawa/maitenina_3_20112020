@@ -4,8 +4,9 @@
 
 .heart-container:hover{
     .heart-solid-container{
-    display: block;
-    @include heart-color;      
+    display: inline;
+    @include gradient-color-icon;  
+    content: "\f004";    
 
     }
     .heart-empty-container{

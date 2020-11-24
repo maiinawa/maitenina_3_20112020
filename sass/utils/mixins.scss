@@ -49,10 +49,13 @@
     background: linear-gradient($secondary-color, $primary-color);
 }
 
-@mixin heart-color {
-    color: linear-gradient($secondary-color, $primary-color);
-}
-
 @mixin box-shadow{
     box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.08);        
+}
+
+@mixin gradient-color-icon{
+    display:block;
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
