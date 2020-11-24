@@ -29,6 +29,7 @@ p {
 
 .heart-container:hover .heart-solid-container {
   display: block;
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 .heart-container:hover .heart-empty-container {
   display: none;
@@ -100,12 +101,13 @@ footer .fa-ul .footer_list_no-puce {
   margin: 0;
 }
 .presentation a {
-  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   text-decoration: none;
   display: inline-block;
   border-radius: 50px;
   margin: auto;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.17);
   margin-top: 30px;
   padding: 18px 0px;
   width: 218px;
@@ -166,6 +168,7 @@ footer .fa-ul .footer_list_no-puce {
   position: relative;
   z-index: 1;
   background-color: #ffffff;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -216,7 +219,7 @@ footer .fa-ul .footer_list_no-puce {
   width: 100%;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  background-color: pink;
+  background-color: white;
 }
 .menu_carte-top-align {
   align-items: center;
@@ -244,6 +247,7 @@ footer .fa-ul .footer_list_no-puce {
   display: flex;
   margin: 0px 0px 15px 0px;
   background-color: white;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.17);
   border-radius: 15px;
 }
 .menu_block_text {
@@ -268,19 +272,21 @@ footer .fa-ul .footer_list_no-puce {
   /*animation survol*/
   position: absolute;
   /*animation survol*/
-  transition: all 2s;
+  /* transition: all 2s; */
+  /* :( */
 }
 .menu_block_validation i {
   padding-top: 22px;
   color: white;
 }
 .menu .menu_button {
-  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   text-decoration: none;
   display: inline-block;
   border-radius: 50px;
   margin: auto;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.17);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,7 +317,6 @@ input[type=checkbox] {
 }
 input[type=checkbox]:hover + .menu_block_validation {
   position: static;
-  transition: all 1s;
   transition: linear;
   transform: scaleX(1);
   transform-origin: 100% 0%;

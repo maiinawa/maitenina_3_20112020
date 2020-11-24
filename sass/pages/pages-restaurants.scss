@@ -17,7 +17,7 @@
         width: 100%;
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
-        background-color: pink;
+        background-color: white;
     }
     &_carte-top-align{
         align-items: center;
@@ -43,9 +43,9 @@
     }
     &_block{
         display: flex;
-        
         margin: 0px 0px 15px 0px;
         background-color: white;
+        box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.17);        
         border-radius: 15px;
         &_text{
             position: relative;
@@ -67,7 +67,7 @@
             width: 19%;
             transform: scaleX(0);      /*animation survol*/
             position:absolute;        /*animation survol*/
-            transition: all 2s;
+            /* transition: all 2s; */      /* :( */
             
 
             i{
@@ -93,7 +93,6 @@ input[type="checkbox"]{
     /*animation survol*/
     &:hover + .menu_block_validation{
         position: static;
-        transition: all 1s;
 
         transition: linear ;
         transform: scaleX(1);
@@ -104,7 +103,7 @@ input[type="checkbox"]{
 
     /*animation survol*/
 
-    
+
 /*     &:hover:after + .menu_block_validation{
         position: static;
         transition: linear;

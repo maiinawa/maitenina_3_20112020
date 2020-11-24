@@ -22,12 +22,14 @@
 }
 
 @mixin button-pink{
-    background-color: $secondary-color;
+    @include pink-violet;
     color: white;
     text-decoration: none;
     display: inline-block;
     border-radius: 50px;
     margin: auto;
+    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.17);        
+
 }
 
 @mixin valid{
@@ -41,5 +43,13 @@
 @mixin valid-i{
     padding-top: 22px;
     color: white;
+}
+
+@mixin pink-violet{
+    background: linear-gradient($secondary-color, $primary-color);
+}
+
+@mixin heart-color {
+    color: linear-gradient($secondary-color, $primary-color);
 
 }
