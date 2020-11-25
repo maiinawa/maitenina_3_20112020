@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 img {
@@ -160,7 +161,7 @@ footer .fa-ul .footer_list_no-puce {
   background-color: #f6f6f6;
   margin: 0px 0px 26px 10px;
   height: 65px;
-  width: 100%;
+  width: 96.5%;
   border-radius: 20px;
   align-items: center;
   position: relative;
