@@ -282,6 +282,9 @@ footer .fa-ul .footer_list_no-puce {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.menu_block_text p {
+  font-size: 3.7vw;
+}
 .menu_block_price {
   position: absolute;
   right: 19px;
