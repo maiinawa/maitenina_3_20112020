@@ -4,9 +4,9 @@
     @include box-shadow();
     background-color: $grey;
     margin: 0px 0px 26px 10px;
-    height: 75px;
-    width: 96.5%;
-    border-radius: 25px;
+    height: 65px;
+    width: 100%;
+    border-radius: 20px;
     align-items: center;
     position: relative;
 }
@@ -14,12 +14,12 @@
 @mixin circle{
     position: absolute;
     background-color: $primary-color;
-    height: 23px;
-    width: 23px;
+    height: 22px;
+    width: 22px;
     border-radius: 50%;
     left:-10px;
     text-align: center;
-    line-height: 23px;
+    line-height: 22px;
 }
 
 @mixin button-pink{
@@ -51,7 +51,7 @@
 }
 
 @mixin box-shadow{
-    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.06);        
+    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.10);        
 }
 
 @mixin gradient-color-icon{

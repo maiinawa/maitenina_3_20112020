@@ -1,19 +1,23 @@
 .localisation{
     background-color: $localisation-bar_background-color;
-    height: 48px;
+    height: 46px;
     display: flex;
     justify-content: center;
     align-items: center;
     & i{
+        margin-left: 10px;
+        margin-top: -1px;
+        position: relative;
         color: #353535;
     }
     .search-bar{
+        margin-left: 15px;
+
         font-size: 4vw;
         width: 37%;
         background-color: transparent;
         outline: none;
         border: none;
-        margin-left: 15px;
         padding: 0;
         &::placeholder{
             color: #353535;
@@ -25,31 +29,33 @@
 
 .presentation{
     background-color: $grey;
-    padding: 44px 19px 57px 19px;
+    padding: 33px 19px 19px 21px;
     display: flex;
     flex-direction: column;
     text-align: center;
     
     h1{
-        font-size: 6vw;
-        padding: 0px 12% 0% 12%;
-        margin: 0;
+        font-size: 6.35vw;
+        padding: 0px 15% 0% 12%;
+        margin: auto;
     }
     p{
-        padding-top: 23px;
+        padding: 13px 0px 0px 8px;
     }
     a{
         @include button-pink;
-        margin-top: 30px;
-        padding: 18px 0px;
-        width: 218px;
+        margin: 30px auto;
+        padding: 14px 0px;
+        width: 200px;
+        font-size: 4vw;
     }
 }
 
 .fonctionnement{
     background-color: $white;
-    padding: 53px 19px 42px 19px;
+    padding: 41px 12px 42px 19px;
     h2{
+        font-size: 6.5vw;
         margin: 0;
         padding: 0px 0px 30px 0px;
     }
@@ -65,11 +71,12 @@
         .fonctionnement_numero{
             @include circle();
             span{
+                font-size: 3.5vw;
                 color: white;
             }
         }
         i, .fonctionnement_bloc_text{
-            margin: 0px 0px 0px 30px;
+            margin: -10px 0px 0px 30px;
         }
         &:hover {
             background-color: #f5edff;
@@ -83,11 +90,11 @@
 .restaurants{
     display: flex;
     flex-direction: column;
-    padding: 58px 19px 64px 19px;
+    padding: 35px 19px 64px 19px;
     background-color: $grey;
     h2{
         margin: 0;
-        padding: 0px 0px 30px 0px;
+        padding: 0px 0px 15px 0px;
     }
     .restaurants_mosaic_cards{
         position: relative;

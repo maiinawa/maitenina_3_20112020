@@ -1,26 +1,21 @@
 header{
     position: relative;
     z-index: 1;
-    height: 62px;
+    height: 58px;
     background-color: $white;
     width: 100%;
     box-shadow: 0px 3px 6px 0px #cfcfcf;
 
     .logo{
-        padding-top: 20px;
-        height: 28px;
+        padding: 20px 0px 0px 7px;
+        height: 26px;
     }
-}
-
-main{
-
 }
 
 footer{
     padding: 26px 19px 20px 24px;
     background-color: $footer_background-color;
     color: white;
-    width: 100%;
 
     .footer_elements_bold{
         font-family: 'Shrikhand';
