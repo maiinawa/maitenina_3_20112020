@@ -239,14 +239,17 @@ footer .fa-ul .footer_list_no-puce {
   color: #353535;
 }
 
+.menu {
+  z-index: 1;
+}
 .menu_img {
-  position: relative;
   height: 260px;
   object-fit: cover;
 }
 .menu_carte {
-  position: absolute;
-  top: 260px;
+  position: relative;
+  z-index: 2;
+  margin-top: -60px;
   box-sizing: border-box;
   padding: 40px 12px 57px 12px;
   width: 100%;
