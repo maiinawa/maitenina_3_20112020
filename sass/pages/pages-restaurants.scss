@@ -6,12 +6,14 @@
 }
 
 .menu{
-
+    position: relative;
     &_img{
         height: 260px;
         object-fit: cover;
     }
     &_carte{
+        position: absolute;
+        top: 200px;
         box-sizing: border-box;
         padding: 40px 12px 57px 12px;
         width: 100%;
@@ -69,9 +71,7 @@
             background-color: $third-color;
             width: 19%;
             transform: scaleX(0);      /*animation survol*/
-            position:absolute;        /*animation survol*/
-            /* transition: all 2s; */      /* :( */
-    
+            position:absolute;        /*animation survol*/   
             i{
                 padding-top: 22px;
                 color: white;
@@ -103,21 +103,10 @@ input[type="checkbox"]{
 
     }
 
-    /*animation survol*/
+    /*animation checked*/
 
-
-/*     &:hover:after + .menu_block_validation{
-        position: static;
-        transition: linear;
-        transform: scaleX(1);
-        transform-origin: 100% 0%;
-        transition: transform .6s;
-        background-color: red;
-    }
+/*     
     &:checked + .menu_block_validation{
-
-
-
     }
  */
 }

@@ -1,5 +1,6 @@
 header{
     position: relative;
+    z-index: 1;
     height: 62px;
     background-color: $white;
     width: 100%;
@@ -11,10 +12,15 @@ header{
     }
 }
 
+main{
+}
+
 footer{
     padding: 26px 19px 20px 24px;
     background-color: $footer_background-color;
     color: white;
+    width: 100%;
+    position: sticky;
     .footer_elements_bold{
         font-family: 'Shrikhand';
         font-size: 5vw;

@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 img {
@@ -42,6 +45,7 @@ p {
 
 header {
   position: relative;
+  z-index: 1;
   height: 62px;
   background-color: #ffffff;
   width: 100%;
@@ -56,6 +60,8 @@ footer {
   padding: 26px 19px 20px 24px;
   background-color: #353535;
   color: white;
+  width: 100%;
+  position: sticky;
 }
 footer .footer_elements_bold {
   font-family: "Shrikhand";
@@ -234,11 +240,16 @@ footer .fa-ul .footer_list_no-puce {
   color: #353535;
 }
 
+.menu {
+  position: relative;
+}
 .menu_img {
   height: 260px;
   object-fit: cover;
 }
 .menu_carte {
+  position: absolute;
+  top: 200px;
   box-sizing: border-box;
   padding: 40px 12px 57px 12px;
   width: 100%;
@@ -300,8 +311,6 @@ footer .fa-ul .footer_list_no-puce {
   /*animation survol*/
   position: absolute;
   /*animation survol*/
-  /* transition: all 2s; */
-  /* :( */
 }
 .menu_block_validation i {
   padding-top: 22px;
@@ -327,19 +336,9 @@ footer .fa-ul .footer_list_no-puce {
 input[type=checkbox] {
   display: none;
   /*animation survol*/
-  /*animation survol*/
-  /*     &:hover:after + .menu_block_validation{
-          position: static;
-          transition: linear;
-          transform: scaleX(1);
-          transform-origin: 100% 0%;
-          transition: transform .6s;
-          background-color: red;
-      }
+  /*animation checked*/
+  /*     
       &:checked + .menu_block_validation{
-
-
-
       }
    */
 }
