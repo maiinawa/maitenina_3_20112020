@@ -1,6 +1,7 @@
-@mixin div-squarred-shadow{
+@mixin div-squarred{
     display: flex;
     justify-content: flex-start;
+    @include box-shadow();
     background-color: $grey;
     margin: 0px 0px 26px 10px;
     height: 75px;
@@ -50,7 +51,7 @@
 }
 
 @mixin box-shadow{
-    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.08);        
+    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.06);        
 }
 
 @mixin gradient-color-icon{
