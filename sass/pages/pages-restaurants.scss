@@ -6,14 +6,15 @@
 }
 
 .menu{
-    position: relative;
     &_img{
+        position: relative;
+
         height: 260px;
         object-fit: cover;
     }
     &_carte{
         position: absolute;
-        top: 200px;
+        top: 260px;
         box-sizing: border-box;
         padding: 40px 12px 57px 12px;
         width: 100%;

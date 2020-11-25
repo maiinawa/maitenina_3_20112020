@@ -61,7 +61,6 @@ footer {
   background-color: #353535;
   color: white;
   width: 100%;
-  position: sticky;
 }
 footer .footer_elements_bold {
   font-family: "Shrikhand";
@@ -240,16 +239,14 @@ footer .fa-ul .footer_list_no-puce {
   color: #353535;
 }
 
-.menu {
-  position: relative;
-}
 .menu_img {
+  position: relative;
   height: 260px;
   object-fit: cover;
 }
 .menu_carte {
   position: absolute;
-  top: 200px;
+  top: 260px;
   box-sizing: border-box;
   padding: 40px 12px 57px 12px;
   width: 100%;
