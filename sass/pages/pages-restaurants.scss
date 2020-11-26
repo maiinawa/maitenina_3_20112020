@@ -16,7 +16,7 @@
     &_carte{
         position: relative;
         z-index: 2;
-        margin-top: -70px;
+        margin-top: -60px;
         box-sizing: border-box;
         padding: 30px 12px 57px 12px;
         width: 100%;
@@ -26,7 +26,7 @@
     }
     &_carte-top-align{
         align-items: center;
-        padding: 0px 8px 0px 8px;
+        padding: 0px 20px 0px 8px;
         font-family:'Shrikhand';
         display: flex;
         justify-content: space-between;
@@ -86,10 +86,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 18px 40px;
+        padding: 14px 40px;
         margin: 35px auto 15px auto;
         outline: none;
         border: none;
+        font-weight: 500;
+
     }
 }
 input[type="checkbox"]{

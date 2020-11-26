@@ -5,7 +5,7 @@
     background-color: $grey;
     margin: 0px 0px 26px 10px;
     height: 65px;
-    width: 100%;
+    width: 96%;
     border-radius: 20px;
     align-items: center;
     position: relative;
@@ -24,11 +24,13 @@
 
 @mixin button-pink{
     @include pink-violet;
+    font-size: 4vw;
     color: white;
     text-decoration: none;
     display: inline-block;
     border-radius: 50px;
     margin: auto;
+    font-weight: 500;
     @include box-shadow();      
 
 }
