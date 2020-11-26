@@ -48,7 +48,6 @@
     }
     &_block{
         display: flex;
-        flex-direction: row;
         margin: 0px 0px 15px 0px;
         background-color: white;
         @include box-shadow;       
@@ -59,19 +58,19 @@
             white-space: nowrap;
             text-overflow: clip ellipsis;
             overflow: hidden;
-            & p{
+            & p {
                 font-size: 3.7vw;
             }
         }
         &_price{
-            right: 0;
+            font-size: 3.7vw;
+
+            padding: 30px 5px 0px;
             width:10%;
-            flex-shrink: 1;
             background-color: hotpink;
         }
         &_validation{            
-            flex-shrink: 1;
-            width: 20%;
+            width: 22%;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             text-align: center;

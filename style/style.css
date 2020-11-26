@@ -288,7 +288,6 @@ footer .fa-ul .footer_list_no-puce {
 }
 .menu_block {
   display: flex;
-  flex-direction: row;
   margin: 0px 0px 15px 0px;
   background-color: white;
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
@@ -305,14 +304,13 @@ footer .fa-ul .footer_list_no-puce {
   font-size: 3.7vw;
 }
 .menu_block_price {
-  right: 0;
+  font-size: 3.7vw;
+  padding: 30px 5px 0px;
   width: 10%;
-  flex-shrink: 1;
   background-color: hotpink;
 }
 .menu_block_validation {
-  flex-shrink: 1;
-  width: 20%;
+  width: 22%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   text-align: center;
