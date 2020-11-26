@@ -293,19 +293,20 @@ footer .fa-ul .footer_list_no-puce {
   border-radius: 15px;
 }
 .menu_block_text {
-  position: relative;
   width: 100%;
   padding: 10px 14px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_block_text p {
   font-size: 3.7vw;
 }
 .menu_block_price {
-  position: absolute;
-  right: 19px;
-  bottom: 10px;
+  /*             position: absolute;
+              right: 19px;
+              bottom: 10px;
+   */
 }
 .menu_block_validation {
   border-top-right-radius: 15px;

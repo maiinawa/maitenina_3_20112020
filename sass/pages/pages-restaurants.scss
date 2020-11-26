@@ -53,11 +53,11 @@
         @include box-shadow;       
         border-radius: 15px;
         &_text{
-            position: relative;
             width: 100%;
             padding: 10px 14px;
             white-space: nowrap;
             text-overflow: ellipsis;
+            overflow: hidden;
 
 
             & p{
@@ -66,10 +66,10 @@
             }
         }
         &_price{
-            position: absolute;
+/*             position: absolute;
             right: 19px;
             bottom: 10px;
-        }
+ */        }
         &_validation{
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
