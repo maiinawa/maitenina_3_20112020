@@ -76,7 +76,7 @@
             }
         }
         i, .fonctionnement_bloc_text{
-            margin: -10px 0px 0px 30px;
+            margin: 0px 0px 0px 32px;
         }
         &:hover {
             background-color: #f5edff;
@@ -90,7 +90,7 @@
 .restaurants{
     display: flex;
     flex-direction: column;
-    padding: 35px 19px 64px 19px;
+    padding: 35px 12px 64px 12px;
     background-color: $grey;
     h2{
         margin: 0;

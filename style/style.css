@@ -3,16 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   margin: 0;
-  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
-}
-
-main {
-  width: 100%;
 }
 
 img {
@@ -57,7 +52,7 @@ header {
   box-shadow: 0px 3px 6px 0px #cfcfcf;
 }
 header .logo {
-  padding: 20px 0px 0px 7px;
+  padding: 20px 0px 0px 0px;
   height: 26px;
 }
 
@@ -165,7 +160,7 @@ footer .fa-ul .footer_list_no-puce {
   background-color: #f6f6f6;
   margin: 0px 0px 26px 10px;
   height: 65px;
-  width: 94.5%;
+  width: 100%;
   border-radius: 20px;
   align-items: center;
   position: relative;
@@ -185,7 +180,7 @@ footer .fa-ul .footer_list_no-puce {
   color: white;
 }
 .fonctionnement .fonctionnement_bloc i, .fonctionnement .fonctionnement_bloc .fonctionnement_bloc_text {
-  margin: -10px 0px 0px 30px;
+  margin: 0px 0px 0px 32px;
 }
 .fonctionnement .fonctionnement_bloc:hover {
   background-color: #f5edff;
@@ -197,7 +192,7 @@ footer .fa-ul .footer_list_no-puce {
 .restaurants {
   display: flex;
   flex-direction: column;
-  padding: 35px 19px 64px 19px;
+  padding: 35px 12px 64px 12px;
   background-color: #f6f6f6;
 }
 .restaurants h2 {
