@@ -132,11 +132,10 @@ footer .fa-ul .footer_list_no-puce {
   border-radius: 50px;
   margin: auto;
   font-weight: 500;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
   margin: 30px auto;
   padding: 14px 0px;
   width: 200px;
-  font-size: 4vw;
 }
 
 .fonctionnement {
@@ -158,7 +157,7 @@ footer .fa-ul .footer_list_no-puce {
   font-weight: 500;
   display: flex;
   justify-content: flex-start;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
   background-color: #f6f6f6;
   margin: 0px 0px 26px 10px;
   height: 65px;
@@ -205,7 +204,7 @@ footer .fa-ul .footer_list_no-puce {
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -290,7 +289,7 @@ footer .fa-ul .footer_list_no-puce {
   display: flex;
   margin: 0px 0px 15px 0px;
   background-color: white;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
 }
 .menu_block_text {
@@ -332,7 +331,7 @@ footer .fa-ul .footer_list_no-puce {
   border-radius: 50px;
   margin: auto;
   font-weight: 500;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,7 +339,6 @@ footer .fa-ul .footer_list_no-puce {
   margin: 35px auto 15px auto;
   outline: none;
   border: none;
-  font-weight: 500;
 }
 
 input[type=checkbox] {
@@ -357,7 +355,7 @@ input[type=checkbox]:hover + .menu_block_validation {
   transition: linear;
   transform: scaleX(1);
   transform-origin: 100% 0%;
-  transition: transform 0.6s;
+  transition: transform 0.6s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

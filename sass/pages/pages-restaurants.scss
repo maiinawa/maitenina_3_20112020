@@ -58,8 +58,11 @@
             padding: 10px 14px;
             white-space: nowrap;
             text-overflow: ellipsis;
+
+
             & p{
                 font-size: 3.7vw;
+        
             }
         }
         &_price{
@@ -90,8 +93,6 @@
         margin: 35px auto 15px auto;
         outline: none;
         border: none;
-        font-weight: 500;
-
     }
 }
 input[type="checkbox"]{
@@ -100,11 +101,10 @@ input[type="checkbox"]{
     /*animation survol*/
     &:hover + .menu_block_validation{
         position: static;
-
         transition: linear ;
         transform: scaleX(1);
         transform-origin: 100% 0%;
-        transition: transform .6s;
+        transition: transform .6s ease-in-out;
 
     }
 
