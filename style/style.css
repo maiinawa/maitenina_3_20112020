@@ -288,32 +288,37 @@ footer .fa-ul .footer_list_no-puce {
 }
 .menu_block {
   display: flex;
+  flex-direction: row;
   margin: 0px 0px 15px 0px;
   background-color: white;
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  width: 100%;
 }
 .menu_block_text {
-  position: relative;
-  width: 100%;
   padding: 10px 14px;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  text-overflow: clip ellipsis;
+  overflow: hidden;
 }
 .menu_block_text p {
   font-size: 3.7vw;
 }
 .menu_block_price {
-  position: absolute;
-  right: 19px;
-  bottom: 10px;
+  right: 0;
+  width: 10%;
+  flex-shrink: 1;
+  background-color: hotpink;
 }
 .menu_block_validation {
+  flex-shrink: 1;
+  width: 20%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   text-align: center;
   background-color: #99E2D0;
-  width: 19%;
+  /*             width: 25%;
+   */
   transform: scaleX(0);
   /*animation survol*/
   position: absolute;
@@ -340,7 +345,6 @@ footer .fa-ul .footer_list_no-puce {
   margin: 35px auto 15px auto;
   outline: none;
   border: none;
-  font-weight: 500;
 }
 
 input[type=checkbox] {
