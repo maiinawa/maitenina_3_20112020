@@ -47,12 +47,19 @@
         }
     }
     &_block{
+        transition: linear ;
+        transform: scaleX(1);
+
+        transition-duration: 0.1s;
+
         display: flex;
         margin: 0px 0px 15px 0px;
         background-color: white;
         @include box-shadow;       
         border-radius: 15px;
+        width: 100%;
         &_text{
+<<<<<<< HEAD
             width: 100%;
             padding: 10px 14px;
             white-space: nowrap;
@@ -61,25 +68,43 @@
 
 
             & p{
+=======
+            padding: 10px 14px;
+            white-space: nowrap;
+            text-overflow: clip ellipsis;
+            overflow: hidden;
+            & p {
+>>>>>>> animation-menu
                 font-size: 3.7vw;
         
             }
         }
         &_price{
+<<<<<<< HEAD
 /*             position: absolute;
             right: 19px;
             bottom: 10px;
  */        }
         &_validation{
+=======
+            font-size: 3.7vw;
+            padding: 30px 8px 0px;
+            width:10%;
+        }
+        &_validation{            
+            width: 20%;
+>>>>>>> animation-menu
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             text-align: center;
             background-color: $third-color;
-            width: 19%;
-            transform: scaleX(0);      /*animation survol*/
-            position:absolute;        /*animation survol*/   
+            transform: scaleX(0);    /*animation stade 0 survol*/
+            transition: all .4s;     /*animation retour survol*/
+            right:0;                 /*garder la div a droite fin hover*/
+            position: absolute;      /*animation survol*/
             i{
-                padding-top: 22px;
+                padding-top: 22px;    /*centrer logo*/
+                padding-bottom: 16px;  /*garder la hauteur du block validation fin hover*/
                 color: white;
             }
         }
@@ -99,6 +124,7 @@ input[type="checkbox"]{
     display: none;
 
     /*animation survol*/
+<<<<<<< HEAD
     &:hover + .menu_block_validation{
         position: static;
         transition: linear ;
@@ -107,11 +133,17 @@ input[type="checkbox"]{
         transition: transform .6s ease-in-out;
 
     }
+=======
+    &:hover ~ .menu_block_validation{
+        height: 100%;
 
-    /*animation checked*/
+        position: static;   
+        transition: linear ;
+        transform: scaleX(1);        /*animation stade 1 survol*/
+        transform-origin: 100% 0%;   /*animation stade 1 survol*/
+        transition: transform .6s;   /*durée début hover*/
+>>>>>>> animation-menu
 
-/*     
-    &:checked + .menu_block_validation{
+
     }
- */
 }
