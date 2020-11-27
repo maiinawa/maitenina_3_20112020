@@ -47,6 +47,11 @@
         }
     }
     &_block{
+        transition: linear ;
+        transform: scaleX(1);
+
+        transition-duration: 0.1s;
+
         display: flex;
         margin: 0px 0px 15px 0px;
         background-color: white;
@@ -64,22 +69,22 @@
         }
         &_price{
             font-size: 3.7vw;
-
-            padding: 30px 5px 0px;
+            padding: 30px 8px 0px;
             width:10%;
-            background-color: hotpink;
         }
         &_validation{            
-            width: 22%;
+            width: 20%;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             text-align: center;
             background-color: $third-color;
-/*             width: 25%;
- */            transform: scaleX(0);      /*animation survol*/
-            position:absolute;        /*animation survol*/   
+            transform: scaleX(0);    /*animation stade 0 survol*/
+            transition: all .4s;     /*animation retour survol*/
+            right:0;                 /*garder la div a droite fin hover*/
+            position: absolute;      /*animation survol*/
             i{
-                padding-top: 22px;
+                padding-top: 22px;    /*centrer logo*/
+                padding-bottom: 16px;  /*garder la hauteur du block validation fin hover*/
                 color: white;
             }
         }
@@ -99,20 +104,15 @@ input[type="checkbox"]{
     display: none;
 
     /*animation survol*/
-    &:hover + .menu_block_validation{
-        position: static;
+    &:hover ~ .menu_block_validation{
+        height: 100%;
 
+        position: static;   
         transition: linear ;
-        transform: scaleX(1);
-        transform-origin: 100% 0%;
-        transition: transform .6s;
+        transform: scaleX(1);        /*animation stade 1 survol*/
+        transform-origin: 100% 0%;   /*animation stade 1 survol*/
+        transition: transform .6s;   /*durée début hover*/
+
 
     }
-
-    /*animation checked*/
-
-/*     
-    &:checked + .menu_block_validation{
-    }
- */
 }
