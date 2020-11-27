@@ -59,41 +59,24 @@
         border-radius: 15px;
         width: 100%;
         &_text{
-<<<<<<< HEAD
             width: 100%;
             padding: 10px 14px;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
 
-
             & p{
-=======
-            padding: 10px 14px;
-            white-space: nowrap;
-            text-overflow: clip ellipsis;
-            overflow: hidden;
-            & p {
->>>>>>> animation-menu
                 font-size: 3.7vw;
         
             }
         }
         &_price{
-<<<<<<< HEAD
-/*             position: absolute;
-            right: 19px;
-            bottom: 10px;
- */        }
-        &_validation{
-=======
             font-size: 3.7vw;
             padding: 30px 8px 0px;
             width:10%;
         }
         &_validation{            
             width: 20%;
->>>>>>> animation-menu
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             text-align: center;
@@ -124,16 +107,6 @@ input[type="checkbox"]{
     display: none;
 
     /*animation survol*/
-<<<<<<< HEAD
-    &:hover + .menu_block_validation{
-        position: static;
-        transition: linear ;
-        transform: scaleX(1);
-        transform-origin: 100% 0%;
-        transition: transform .6s ease-in-out;
-
-    }
-=======
     &:hover ~ .menu_block_validation{
         height: 100%;
 
@@ -142,7 +115,6 @@ input[type="checkbox"]{
         transform: scaleX(1);        /*animation stade 1 survol*/
         transform-origin: 100% 0%;   /*animation stade 1 survol*/
         transition: transform .6s;   /*durée début hover*/
->>>>>>> animation-menu
 
 
     }
