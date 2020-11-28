@@ -312,7 +312,6 @@ footer .fa-ul .footer_list_no-puce {
   width: 10%;
 }
 .menu_block_validation {
-  width: 20%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   text-align: center;
@@ -358,6 +357,7 @@ input[type=checkbox] {
 }
 input[type=checkbox]:hover ~ .menu_block_validation {
   height: 100%;
+  width: 20%;
   position: static;
   transition: linear;
   transform: scaleX(1);

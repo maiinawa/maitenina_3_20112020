@@ -49,9 +49,7 @@
     &_block{
         transition: linear ;
         transform: scaleX(1);
-
         transition-duration: 0.1s;
-
         display: flex;
         margin: 0px 0px 15px 0px;
         background-color: white;
@@ -64,7 +62,6 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-
             & p{
                 font-size: 3.7vw;
         
@@ -76,7 +73,6 @@
             width:10%;
         }
         &_validation{            
-            width: 20%;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             text-align: center;
@@ -109,6 +105,7 @@ input[type="checkbox"]{
     /*animation survol*/
     &:hover ~ .menu_block_validation{
         height: 100%;
+        width: 20%;
 
         position: static;   
         transition: linear ;
