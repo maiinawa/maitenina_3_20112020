@@ -95,11 +95,11 @@ footer .fa-ul .footer_list_no-puce {
 }
 
 .localisation {
-  background-color: #eaeaea;
-  height: 46px;
   display: flex;
+  height: 46px;
   justify-content: center;
   align-items: center;
+  background-color: #eaeaea;
 }
 .localisation i {
   margin-left: 10px;
@@ -108,13 +108,13 @@ footer .fa-ul .footer_list_no-puce {
   color: #353535;
 }
 .localisation .search-bar {
-  margin-left: 15px;
-  font-size: 4vw;
   width: 37%;
+  margin-left: 15px;
+  padding: 0;
+  font-size: 4vw;
   background-color: transparent;
   outline: none;
   border: none;
-  padding: 0;
 }
 .localisation .search-bar::placeholder {
   color: #353535;
@@ -123,21 +123,24 @@ footer .fa-ul .footer_list_no-puce {
 }
 
 .presentation {
-  background-color: #f6f6f6;
-  padding: 33px 19px 19px 21px;
   display: flex;
   flex-direction: column;
+  padding: 33px 19px 19px 21px;
   text-align: center;
+  background-color: #f6f6f6;
 }
 .presentation h1 {
-  font-size: 6.35vw;
   padding: 0px 15% 0% 12%;
   margin: auto;
+  font-size: 6.35vw;
 }
 .presentation p {
   padding: 13px 0px 0px 8px;
 }
 .presentation a {
+  margin: 30px auto;
+  padding: 14px 0px;
+  width: 200px;
   background: linear-gradient(#ff79da, #9356dc);
   font-size: 4vw;
   color: white;
@@ -147,19 +150,16 @@ footer .fa-ul .footer_list_no-puce {
   margin: auto;
   font-weight: 500;
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
-  margin: 30px auto;
-  padding: 14px 0px;
-  width: 200px;
 }
 
 .fonctionnement {
-  background-color: #ffffff;
   padding: 41px 12px 42px 19px;
+  background-color: #ffffff;
 }
 .fonctionnement h2 {
-  font-size: 6.5vw;
   margin: 0;
   padding: 0px 0px 30px 0px;
+  font-size: 6.5vw;
 }
 .fonctionnement .fonctionnement_mosaic {
   display: flex;
@@ -194,7 +194,8 @@ footer .fa-ul .footer_list_no-puce {
   font-size: 3.5vw;
   color: white;
 }
-.fonctionnement .fonctionnement_bloc i, .fonctionnement .fonctionnement_bloc .fonctionnement_bloc_text {
+.fonctionnement .fonctionnement_bloc i,
+.fonctionnement .fonctionnement_bloc .fonctionnement_bloc_text {
   margin: 0px 0px 0px 32px;
 }
 .fonctionnement .fonctionnement_bloc:hover {
@@ -217,30 +218,30 @@ footer .fa-ul .footer_list_no-puce {
 .restaurants .restaurants_mosaic_cards {
   position: relative;
   z-index: 1;
-  background-color: #ffffff;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
   border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
 }
 .restaurants .restaurants_mosaic_cards img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
   height: 173px;
   object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag {
   z-index: 2;
   position: absolute;
+  padding: 10px 10px 10px 10px;
   top: 13px;
   right: 11px;
   width: 79px;
   border-radius: 5px;
-  color: #008766;
   background-color: #99e2d0;
   text-align: center;
-  padding: 10px 10px 10px 10px;
+  color: #008766;
 }
 .restaurants .restaurants_mosaic_cards .restaurants_mosaic_cards_text {
   padding: 15px 0px 15px 14px;
@@ -347,7 +348,7 @@ footer .fa-ul .footer_list_no-puce {
 }
 .menu .fa-check-circle {
   z-index: 2;
-  margin: 19px 0 0 318px;
+  margin: 19px 0 0 334px;
   position: absolute;
   text-align: right;
   color: red;
@@ -360,8 +361,7 @@ footer .fa-ul .footer_list_no-puce {
   border-bottom-right-radius: 0;
 }
 .menu .menu_block:hover .fa-check-circle {
-  display: block;
-  margin: 21px 0 0 273px;
+  margin: 21px 0 0 297px;
   transform: rotate(2turn);
 }
 .menu_button {

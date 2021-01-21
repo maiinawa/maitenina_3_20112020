@@ -2,6 +2,7 @@
   position: absolute;
   top: 22px;
   left: 25px;
+
   color: #353535;
 }
 
@@ -12,6 +13,7 @@
     height: 260px;
     object-fit: cover;
   }
+
   &_carte {
     z-index: 2;
     position: relative;
@@ -24,6 +26,7 @@
     border-top-left-radius: 50px;
     background-color: white;
   }
+
   &_carte-top-align {
     display: flex;
     justify-content: space-between;
@@ -32,14 +35,17 @@
     align-items: center;
     font-family: "Shrikhand";
   }
+
   &_categories {
     display: flex;
     flex-direction: column;
     padding: 40px 0px 0px 0px;
+
     &_title {
       position: relative;
       margin: 0px 0px 25px 0px;
     }
+
     &_underline {
       position: absolute;
       width: 40px;
@@ -89,9 +95,11 @@
           white-space: nowrap;
           text-overflow: ellipsis;
         }
+
         & h4 {
           font-size: 2vh;
         }
+
         & p {
           font-size: 1.7vh;
         }
@@ -108,7 +116,7 @@
 
   .fa-check-circle {
     z-index: 2;
-    margin: 19px 0 0 318px;
+    margin: 19px 0 0 334px;
     position: absolute;
 
     text-align: right;
@@ -123,9 +131,9 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+
   .menu_block:hover .fa-check-circle {
-    display: block;
-    margin: 21px 0 0 273px;
+    margin: 21px 0 0 297px;
     transform: rotate(2turn);
   }
 
@@ -141,6 +149,7 @@
     border: none;
   }
 }
+
 input[type="checkbox"] {
   display: none;
 }
