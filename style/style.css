@@ -335,10 +335,10 @@ footer .fa-ul .footer_list_no-puce {
   text-overflow: ellipsis;
 }
 .menu_block_text_plats h4 {
-  font-size: 1.7vh;
+  font-size: 2vh;
 }
 .menu_block_text_plats p {
-  font-size: 1.5vh;
+  font-size: 1.7vh;
 }
 .menu_block_text_price {
   background-color: white;
@@ -350,7 +350,7 @@ footer .fa-ul .footer_list_no-puce {
   margin: 19px 0 0 318px;
   position: absolute;
   color: white;
-  font-size: 2.2vh;
+  font-size: 2.4vh;
   transition: all 0.5s ease;
 }
 .menu .menu_block:hover .menu_block_text {
@@ -360,7 +360,7 @@ footer .fa-ul .footer_list_no-puce {
 }
 .menu .menu_block:hover .fa-check-circle {
   display: block;
-  margin: 19px 0 0 268px;
+  margin: 21px 0 0 273px;
   transform: rotate(2turn);
 }
 .menu_button {

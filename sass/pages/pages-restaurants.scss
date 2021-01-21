@@ -90,10 +90,10 @@
           text-overflow: ellipsis;
         }
         & h4 {
-          font-size: 1.7vh;
+          font-size: 2vh;
         }
         & p {
-          font-size: 1.5vh;
+          font-size: 1.7vh;
         }
       }
 
@@ -112,7 +112,7 @@
     position: absolute;
 
     color: white;
-    font-size: 2.2vh;
+    font-size: 2.4vh;
 
     transition: all 0.5s ease;
   }
@@ -124,7 +124,7 @@
   }
   .menu_block:hover .fa-check-circle {
     display: block;
-    margin: 19px 0 0 268px;
+    margin: 21px 0 0 273px;
     transform: rotate(2turn);
   }
 
