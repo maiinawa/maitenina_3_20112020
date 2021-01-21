@@ -13,75 +13,95 @@
     object-fit: cover;
   }
   &_carte {
-    position: relative;
     z-index: 2;
+    position: relative;
+    width: 100%;
+    padding: 30px 12px 57px 12px;
     margin-top: -60px;
     box-sizing: border-box;
-    padding: 30px 12px 57px 12px;
-    width: 100%;
+
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     background-color: white;
   }
   &_carte-top-align {
-    align-items: center;
-    padding: 0px 20px 0px 8px;
-    font-family: "Shrikhand";
     display: flex;
     justify-content: space-between;
+    padding: 0px 20px 0px 8px;
+
+    align-items: center;
+    font-family: "Shrikhand";
   }
   &_categories {
-    padding: 40px 0px 0px 0px;
     display: flex;
     flex-direction: column;
+    padding: 40px 0px 0px 0px;
     &_title {
       position: relative;
       margin: 0px 0px 25px 0px;
     }
     &_underline {
       position: absolute;
-      bottom: -9px;
-      border-top: 3px solid $third-color;
       width: 40px;
+      bottom: -9px;
+
+      border-top: 3px solid $third-color;
     }
   }
 
   &_block {
+    position: relative;
     display: flex;
     width: 100%;
     height: 60px;
+    overflow: hidden;
 
-    background-color: lawngreen;
+    border: none;
+    background-color: greenyellow;
     border-radius: 15px;
     &_text {
+      z-index: 1;
+      position: relative;
       display: flex;
       width: 100%;
 
-      background-color: red;
+      background-color: white;
       border-radius: 15px;
 
-      transition-duration: all 3s ease;
+      transition: all 0.5s ease;
       &_plats {
+        width: inherit;
         margin: 10px 10px;
         padding: 0;
-        white-space: nowrap;
+
         overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
       }
       &_price {
-        margin: 20px 10px 0 0;
+        margin: 20px 8px 0 0;
       }
     }
   }
 
   .fa-check-circle {
-    display: none;
+    z-index: 2;
+    margin: 22px 0 0 318px;
+    position: absolute;
+
+    color: white;
+    transition: all 0.5s ease;
   }
 
   .menu_block:hover .menu_block_text {
     width: 85%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+  }
+  .menu_block:hover .fa-check-circle {
+    display: block;
+    margin: 22px 0 0 283px;
+    transform: rotate(2turn);
   }
 
   &_button {
@@ -91,6 +111,7 @@
     justify-content: center;
     padding: 14px 40px;
     margin: 35px auto 15px auto;
+
     outline: none;
     border: none;
   }
