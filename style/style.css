@@ -19,7 +19,12 @@ a {
   color: black;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
 }
 
@@ -27,6 +32,15 @@ p {
   font-size: 4.5vw;
 }
 
+@keyframes slideInUp {
+  0% {
+    transform: translateY(40%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .heart-solid-container {
   display: none;
 }
@@ -34,7 +48,7 @@ p {
 .heart-container:hover .heart-solid-container {
   display: inline;
   display: block;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   content: "";
@@ -124,7 +138,7 @@ footer .fa-ul .footer_list_no-puce {
   padding: 13px 0px 0px 8px;
 }
 .presentation a {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   font-size: 4vw;
   color: white;
   text-decoration: none;
@@ -168,7 +182,7 @@ footer .fa-ul .footer_list_no-puce {
 }
 .fonctionnement .fonctionnement_bloc .fonctionnement_numero {
   position: absolute;
-  background-color: #9356DC;
+  background-color: #9356dc;
   height: 22px;
   width: 22px;
   border-radius: 50%;
@@ -187,7 +201,7 @@ footer .fa-ul .footer_list_no-puce {
   background-color: #f5edff;
 }
 .fonctionnement .fonctionnement_bloc:hover > i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .restaurants {
@@ -283,17 +297,21 @@ footer .fa-ul .footer_list_no-puce {
   position: absolute;
   width: 40px;
   bottom: -9px;
-  border-top: 3px solid #99E2D0;
+  border-top: 3px solid #99e2d0;
 }
 .menu_block {
   position: relative;
   display: flex;
   width: 100%;
-  height: 60px;
+  height: auto;
+  margin-bottom: 9px;
   overflow: hidden;
   border: none;
-  background-color: greenyellow;
+  background-color: #99e2d0;
   border-radius: 15px;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  animation-name: slideInUp;
+  animation-duration: 1s;
 }
 .menu_block_text {
   z-index: 1;
@@ -305,21 +323,34 @@ footer .fa-ul .footer_list_no-puce {
   transition: all 0.5s ease;
 }
 .menu_block_text_plats {
-  width: inherit;
+  background-color: white;
+  width: 83.5%;
   margin: 10px 10px;
   padding: 0;
+}
+.menu_block_text_plats h4,
+.menu_block_text_plats p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.menu_block_text_plats h4 {
+  font-size: 1.7vh;
+}
+.menu_block_text_plats p {
+  font-size: 1.5vh;
+}
 .menu_block_text_price {
-  margin: 20px 8px 0 0;
+  background-color: white;
+  font-size: 1.5vh;
+  margin: 28px 10px 0 -5px;
 }
 .menu .fa-check-circle {
   z-index: 2;
-  margin: 22px 0 0 318px;
+  margin: 19px 0 0 318px;
   position: absolute;
   color: white;
+  font-size: 2.2vh;
   transition: all 0.5s ease;
 }
 .menu .menu_block:hover .menu_block_text {
@@ -329,11 +360,11 @@ footer .fa-ul .footer_list_no-puce {
 }
 .menu .menu_block:hover .fa-check-circle {
   display: block;
-  margin: 22px 0 0 283px;
+  margin: 19px 0 0 268px;
   transform: rotate(2turn);
 }
 .menu_button {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   font-size: 4vw;
   color: white;
   text-decoration: none;

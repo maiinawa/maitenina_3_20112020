@@ -14,7 +14,7 @@
         
         <header>
             <a href="index.html"><div class="goback"><i class="fas fa-arrow-left fa-lg"></i></div></a>
-            <a href="index.html" class="logo-link"><img class="logo" src="images/logo/ohmyfood@2x.svg"></a>
+            <div class="logo-link"><img class="logo" src="images/logo/ohmyfood@2x.svg"></div>
         </header>
 
         <main>
@@ -22,7 +22,7 @@
 
                 <img class="menu_img" src="images/restaurants/alafrancaise.jpg">
 
-                <article class="menu_carte">
+                <form class="menu_carte">
 
                     <div class="menu_carte-top-align">
 
@@ -35,120 +35,155 @@
 
                     <section class="menu_categories">
                         
-                        <p class="menu_categories_title">ENTREES</p>
-                        <div class="menu_categories_underline"></div>
+                        <div class="menu_categories_title">ENTREES
+                            <div class="menu_categories_underline"></div>
+                        </div>
+                        
 
-                        <a href="" class="menu_block">
+                        <label for="tartarepoulpe" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
                             <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
+                                <div class="menu_block_text_plats">
+                                    <h4>Tartare de poulpe acidulé</h4>
+                                    <p>Aux zestes d'orange</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>25€</h4></div>
                             </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
+                        </label>
 
-                        <a href="" class="menu_block">
+                        <label for="velouteantan" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
                             <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
+                                <div class="menu_block_text_plats">
+                                    <h4>
+                                        Velouté de légumes d'antan</h4>
+                                    <p>Carotte, panais, topinambour</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>35€</h4></div>
                             </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
+                        </label>
 
-                        <a href="" class="menu_block">
+                        <label for="soupe" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
                             <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
+                                <div class="menu_block_text_plats">
+                                    <h4>Soupe à l'oignon</h4>
+                                    <p>Revisitée</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>20€</h4></div>
                             </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
+                        </label>
+                    </section>
+
+                        <section class="menu_categories">
+                        
+                            <div class="menu_categories_title">PLATS
+                                <div class="menu_categories_underline"></div>
+                            </div>
+
+                        <label for="saintjacques" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
+                            <div class="menu_block_text">
+                                <div class="menu_block_text_plats">
+                                    <h4>Coquilles Saint-Jacques</h4>
+                                    <p>Accompagnées d'une purée de panais</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>40€</h4></div>
+                            </div>
+                        </label>
+
+                        <label for="magret" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
+                            <div class="menu_block_text">
+                                <div class="menu_block_text_plats">
+                                    <h4>Magret de canard</h4>
+                                    <p>Et parmentier de pommes de terre</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>35€</h4></div>
+                            </div>
+                        </label>
+
+                        <label for="pigeonneau" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
+                            <div class="menu_block_text">
+                                <div class="menu_block_text_plats">
+                                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                                    <p>Sur son lit de gnocchis aux légumes</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>44€</h4></div>
+                            </div>
+                        </label>
 
                     </section>
 
                     <section class="menu_categories">
+                    
+                        <div class="menu_categories_title">DESSERTS
+                            <div class="menu_categories_underline"></div>
+                        </div>
+
+                        <label for="petales" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
+                            <div class="menu_block_text">
+                                <div class="menu_block_text_plats">
+                                    <h4>Pétales de violettes glacés</h4>
+                                    <p>Et purée de noisettes</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>18€</h4></div>
+                            </div>
+                        </label>
+
+                        <label for="fondant" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
+                            <div class="menu_block_text">
+                                <div class="menu_block_text_plats">
+                                    <h4>Fondant au chocolat</h4>
+                                    <p>Revisité</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>22€</h4></div>
+                            </div>
+                        </label>
+
+                        <label for="millefeuille" class="menu_block">
+                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
+                            <i class="fas fa-check-circle fa-lg"></i>
+
+                            <div class="menu_block_text">
+                                <div class="menu_block_text_plats">
+                                    <h4>Millefeuille croustillant</h4>
+                                    <p>Myrtilles et pâte d’amande</p>
+                                </div>
+                                <div class="menu_block_text_price"><h4>23€</h4></div>
+                            </div>
+                        </label>
+
+
+
                         
-                        <p class="menu_categories_title">PLATS</p>
-                        <div class="menu_categories_underline"></div>
-
-
-                        <a href="" class="menu_block">
-                            <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
-                            </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
-
-                        <a href="" class="menu_block">
-                            <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
-                            </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
-
-                        <a href="" class="menu_block">
-                            <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
-                            </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
-
                     </section>
 
+                    
+                    <button type="submit" class="menu_button">Commander</button>
 
-                    <section class="menu_categories">
-                        
-                        <p class="menu_categories_title">DESSERTS</p>
-                        <div class="menu_categories_underline"></div>
+                </form>
 
-                        <a href="" class="menu_block">
-                            <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
 
-                            </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
-
-                        <a href="" class="menu_block">
-                            <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
-                            </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
-
-                        <a href="" class="menu_block">
-                            <div class="menu_block_text">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
-                                <p class="menu_block_price">25€</p>
-
-                            </div>
-                            <div class="menu_block_validation"><i class="fas fa-check-circle fa-lg"></i></div>
-                        </a>
-
-                    </section>
-
-                <a class="menu_button" href="">Commander</a>
-
-                </article>
             </section>
 
         </main>
@@ -159,9 +194,9 @@
 
             <ul class="fa-ul">
                 <li><span class="fa-li"><i class="fas fa-utensils"></i></span><a href="">Proposer un restaurant</a></li>
-                <li><span class="fa-li"><i class="fas fa-hands-helping fa-xs"></i></span><a href=""> Devenir partenaire</a></li>
+                <li><span class="fa-li"><i class="fas fa-hands-helping fa-xs"></i></span><a href="">Devenir partenaire</a></li>
                 <li class="footer_list_no-puce"><a href="">Mentions légales</a></li>
-                <li class="footer_list_no-puce"><a href="">Contact</a></li>
+                <li class="footer_list_no-puce"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
             </ul>
             
         </footer>

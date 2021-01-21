@@ -1,0 +1,9 @@
+@keyframes slideInUp {
+  0% {
+    transform: translateY(40%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,64 +1,63 @@
-@mixin div-squarred{
-    display: flex;
-    justify-content: flex-start;
-    @include box-shadow();
-    background-color: $grey;
-    margin: 0px 0px 26px 10px;
-    height: 65px;
-    width: 96%;
-    border-radius: 20px;
-    align-items: center;
-    position: relative;
+@mixin div-squarred {
+  display: flex;
+  justify-content: flex-start;
+  @include box-shadow();
+  background-color: $grey;
+  margin: 0px 0px 26px 10px;
+  height: 65px;
+  width: 96%;
+  border-radius: 20px;
+  align-items: center;
+  position: relative;
 }
 
-@mixin circle{
-    position: absolute;
-    background-color: $primary-color;
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    left:-10px;
-    text-align: center;
-    line-height: 22px;
+@mixin circle {
+  position: absolute;
+  background-color: $primary-color;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  left: -10px;
+  text-align: center;
+  line-height: 22px;
 }
 
-@mixin button-pink{
-    @include pink-violet;
-    font-size: 4vw;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 50px;
-    margin: auto;
-    font-weight: 500;
-    @include box-shadow();      
-
+@mixin button-pink {
+  @include pink-violet;
+  font-size: 4vw;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  margin: auto;
+  font-weight: 500;
+  @include box-shadow();
 }
 
-@mixin valid{
-        margin-left: 20px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        text-align: center;
-        background-color: $third-color;
-        width: 19%;
+@mixin valid {
+  margin-left: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  background-color: $third-color;
+  width: 19%;
 }
-@mixin valid-i{
-    padding-top: 22px;
-    color: white;
-}
-
-@mixin pink-violet{
-    background: linear-gradient($secondary-color, $primary-color);
+@mixin valid-i {
+  padding-top: 22px;
+  color: white;
 }
 
-@mixin box-shadow{
-    box-shadow: 1px 1px 14px 4px rgba(0,0,0,0.05);        
+@mixin pink-violet {
+  background: linear-gradient($secondary-color, $primary-color);
 }
 
-@mixin gradient-color-icon{
-    display:block;
-    background: -webkit-linear-gradient($secondary-color, $primary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@mixin box-shadow {
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+}
+
+@mixin gradient-color-icon {
+  display: block;
+  background: -webkit-linear-gradient($secondary-color, $primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
