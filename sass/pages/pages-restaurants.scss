@@ -1,118 +1,100 @@
-.goback{
-    position: absolute;
-    top: 22px;
-    left: 25px;
-    color: #353535;
+.goback {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  color: #353535;
 }
 
-.menu{
-    z-index: 1;
+.menu {
+  z-index: 1;
 
-    &_img{
-        height: 260px;
-        object-fit: cover;
+  &_img {
+    height: 260px;
+    object-fit: cover;
+  }
+  &_carte {
+    position: relative;
+    z-index: 2;
+    margin-top: -60px;
+    box-sizing: border-box;
+    padding: 30px 12px 57px 12px;
+    width: 100%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: white;
+  }
+  &_carte-top-align {
+    align-items: center;
+    padding: 0px 20px 0px 8px;
+    font-family: "Shrikhand";
+    display: flex;
+    justify-content: space-between;
+  }
+  &_categories {
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    &_title {
+      position: relative;
+      margin: 0px 0px 25px 0px;
+    }
+    &_underline {
+      position: absolute;
+      bottom: -9px;
+      border-top: 3px solid $third-color;
+      width: 40px;
+    }
+  }
 
+  &_block {
+    display: flex;
+    width: 100%;
+    height: 60px;
+
+    background-color: lawngreen;
+    border-radius: 15px;
+    &_text {
+      display: flex;
+      width: 100%;
+
+      background-color: red;
+      border-radius: 15px;
+
+      transition-duration: all 3s ease;
+      &_plats {
+        margin: 10px 10px;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &_price {
+        margin: 20px 10px 0 0;
+      }
     }
-    &_carte{
-        position: relative;
-        z-index: 2;
-        margin-top: -60px;
-        box-sizing: border-box;
-        padding: 30px 12px 57px 12px;
-        width: 100%;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-        background-color: white;
-    }
-    &_carte-top-align{
-        align-items: center;
-        padding: 0px 20px 0px 8px;
-        font-family:'Shrikhand';
-        display: flex;
-        justify-content: space-between;
-    }
-    &_categories{
-        padding: 40px 0px 0px 0px;
-        display: flex;
-        flex-direction: column;
-        &_title{
-            position: relative;
-            margin: 0px 0px 25px 0px;
-        }
-        &_underline{
-            position: absolute;
-            bottom: -9px;
-            border-top : 3px solid $third-color;
-            width: 40px;
-        }
-    }
-    &_block{
-        transition: linear ;
-        transform: scaleX(1);
-        transition-duration: 0.1s;
-        display: flex;
-        margin: 0px 0px 15px 0px;
-        background-color: white;
-        @include box-shadow;       
-        border-radius: 15px;
-        width: 100%;
-        &_text{
-            width: 100%;
-            padding: 10px 14px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            & p{
-                font-size: 3.7vw;
-        
-            }
-        }
-        &_price{
-            font-size: 3.7vw;
-            padding: 30px 8px 0px;
-            width:10%;
-        }
-        &_validation{            
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            text-align: center;
-            background-color: $third-color;
-            transform: scaleX(0);    /*animation stade 0 survol*/
-            transition: all .4s;     /*animation retour survol*/
-            right:0;                 /*garder la div a droite fin hover*/
-            position: absolute;      /*animation survol*/
-            i{
-                padding-top: 22px;    /*centrer logo*/
-                padding-bottom: 16px;  /*garder la hauteur du block validation fin hover*/
-                color: white;
-            }
-        }
-    }
-    .menu_button{
-        @include button-pink;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 40px;
-        margin: 35px auto 15px auto;
-        outline: none;
-        border: none;
-    }
-}
-input[type="checkbox"]{
+  }
+
+  .fa-check-circle {
     display: none;
+  }
 
-    /*animation survol*/
-    &:hover ~ .menu_block_validation{
-        height: 100%;
-        width: 20%;
+  .menu_block:hover .menu_block_text {
+    width: 85%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-        position: static;   
-        transition: linear ;
-        transform: scaleX(1);        /*animation stade 1 survol*/
-        transform-origin: 100% 0%;   /*animation stade 1 survol*/
-        transition: transform .6s;   /*durée début hover*/
-
-
-    }
+  &_button {
+    @include button-pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 40px;
+    margin: 35px auto 15px auto;
+    outline: none;
+    border: none;
+  }
+}
+input[type="checkbox"] {
+  display: none;
 }

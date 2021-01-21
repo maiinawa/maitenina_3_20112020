@@ -286,53 +286,38 @@ footer .fa-ul .footer_list_no-puce {
   width: 40px;
 }
 .menu_block {
-  transition: linear;
-  transform: scaleX(1);
-  transition-duration: 0.1s;
   display: flex;
-  margin: 0px 0px 15px 0px;
-  background-color: white;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
   width: 100%;
+  height: 60px;
+  background-color: lawngreen;
+  border-radius: 15px;
 }
 .menu_block_text {
+  display: flex;
   width: 100%;
-  padding: 10px 14px;
+  background-color: red;
+  border-radius: 15px;
+  transition-duration: all 3s ease;
+}
+.menu_block_text_plats {
+  margin: 10px 10px;
+  padding: 0;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu_block_text p {
-  font-size: 3.7vw;
+.menu_block_text_price {
+  margin: 20px 10px 0 0;
 }
-.menu_block_price {
-  font-size: 3.7vw;
-  padding: 30px 8px 0px;
-  width: 10%;
+.menu .fa-check-circle {
+  display: none;
 }
-.menu_block_validation {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  text-align: center;
-  background-color: #99E2D0;
-  transform: scaleX(0);
-  /*animation stade 0 survol*/
-  transition: all 0.4s;
-  /*animation retour survol*/
-  right: 0;
-  /*garder la div a droite fin hover*/
-  position: absolute;
-  /*animation survol*/
+.menu .menu_block:hover .menu_block_text {
+  width: 85%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-.menu_block_validation i {
-  padding-top: 22px;
-  /*centrer logo*/
-  padding-bottom: 16px;
-  /*garder la hauteur du block validation fin hover*/
-  color: white;
-}
-.menu .menu_button {
+.menu_button {
   background: linear-gradient(#FF79DA, #9356DC);
   font-size: 4vw;
   color: white;
@@ -353,19 +338,6 @@ footer .fa-ul .footer_list_no-puce {
 
 input[type=checkbox] {
   display: none;
-  /*animation survol*/
-}
-input[type=checkbox]:hover ~ .menu_block_validation {
-  height: 100%;
-  width: 20%;
-  position: static;
-  transition: linear;
-  transform: scaleX(1);
-  /*animation stade 1 survol*/
-  transform-origin: 100% 0%;
-  /*animation stade 1 survol*/
-  transition: transform 0.6s;
-  /*durée début hover*/
 }
 
 /*# sourceMappingURL=style.css.map */
