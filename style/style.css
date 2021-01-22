@@ -1,13 +1,72 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes slideInUp {
+  0% {
+    transform: translateY(40%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0 0 25px 8px #99e2d0;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 25px 6px #ff79da;
+  }
+}
+@keyframes loadingPage {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    translate: -999px, 0px;
+  }
+}
+.container_loader {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  animation: loadingPage 5s;
+}
+
+.loader {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  margin: 50% 0 0 43%;
+  border: 11px double white;
+  border-right-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 6px #9356dc;
+  animation: loader 1.5s linear infinite;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
+  z-index: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -32,15 +91,6 @@ p {
   font-size: 4.5vw;
 }
 
-@keyframes slideInUp {
-  0% {
-    transform: translateY(40%);
-    visibility: visible;
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .heart-solid-container {
   display: none;
 }
@@ -138,18 +188,17 @@ footer .fa-ul .footer_list_no-puce {
   padding: 13px 0px 0px 8px;
 }
 .presentation a {
-  margin: 30px auto;
+  margin: 25px auto;
   padding: 14px 0px;
   width: 200px;
+  display: inline-block;
   background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
   font-size: 4vw;
   color: white;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 50px;
-  margin: auto;
   font-weight: 500;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
 }
 
 .fonctionnement {
@@ -351,7 +400,7 @@ footer .fa-ul .footer_list_no-puce {
   margin: 6% 0 0 100%;
   position: absolute;
   text-align: right;
-  color: red;
+  color: white;
   font-size: 2.4vh;
   transition: all 0.5s ease;
 }
@@ -365,15 +414,14 @@ footer .fa-ul .footer_list_no-puce {
   transform: rotate(2turn);
 }
 .menu_button {
+  display: inline-block;
   background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
   font-size: 4vw;
   color: white;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 50px;
-  margin: auto;
   font-weight: 500;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;

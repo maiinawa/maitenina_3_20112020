@@ -1,3 +1,7 @@
+@mixin box-shadow {
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+}
+
 @mixin div-squarred {
   display: flex;
   justify-content: flex-start;
@@ -23,15 +27,16 @@
 }
 
 @mixin button-pink {
+  display: inline-block;
+
   @include pink-violet;
+  @include box-shadow();
+  border-radius: 50px;
+
   font-size: 4vw;
   color: white;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 50px;
-  margin: auto;
   font-weight: 500;
-  @include box-shadow();
 }
 
 @mixin valid {
@@ -49,10 +54,6 @@
 
 @mixin pink-violet {
   background: linear-gradient($secondary-color, $primary-color);
-}
-
-@mixin box-shadow {
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
 }
 
 @mixin gradient-color-icon {
