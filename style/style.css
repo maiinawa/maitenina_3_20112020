@@ -87,10 +87,6 @@ p {
   margin: 0;
 }
 
-p {
-  font-size: 4.5vw;
-}
-
 .heart-solid-container {
   display: none;
 }
@@ -174,11 +170,19 @@ footer .fa-ul .footer_list_no-puce {
   }
 }
 h1 {
-  font-size: 6.35vw;
+  font-size: 1.8em;
 }
 
 h2 {
-  font-size: 6.5vw;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 .localisation {
@@ -198,30 +202,30 @@ h2 {
   width: 37%;
   margin-left: 15px;
   padding: 0;
-  font-size: 4vw;
+  font-size: 1em;
   background-color: transparent;
   outline: none;
   border: none;
 }
 .localisation .search-bar::placeholder {
   color: #353535;
-  font-size: 4vw;
+  font-size: 1em;
   font-weight: 600;
 }
 
 .presentation {
   display: flex;
   flex-direction: column;
-  padding: 33px 19px 19px 21px;
+  padding: 33px 15px 19px 25px;
   text-align: center;
   background-color: #f6f6f6;
 }
 .presentation h1 {
-  padding: 0px 15% 0% 12%;
+  padding: 0px 15% 20px 12%;
   margin: auto;
 }
 .presentation p {
-  padding: 13px 0px 0px 8px;
+  padding: 13px 0px 20px 8px;
 }
 .presentation a {
   margin: 25px auto;
@@ -254,7 +258,7 @@ h2 {
   margin-left: auto;
 }
 .fonctionnement .fonctionnement_bloc {
-  font-size: 4.25vw;
+  font-size: 1em;
   font-weight: 500;
   display: flex;
   justify-content: flex-start;
@@ -278,7 +282,7 @@ h2 {
   line-height: 22px;
 }
 .fonctionnement .fonctionnement_bloc .fonctionnement_numero span {
-  font-size: 3.5vw;
+  font-size: 0.9em;
   color: white;
 }
 .fonctionnement .fonctionnement_bloc i,
@@ -342,19 +346,19 @@ h2 {
 
 @media screen and (min-width: 500px) {
   h1 {
-    font-size: 5vw;
+    font-size: 2em;
   }
 
   h2 {
-    font-size: 4vw;
+    font-size: 1.7em;
   }
 
   h3 {
-    font-size: 4vw;
+    font-size: 1.5em;
   }
 
   p {
-    font-size: 4vw;
+    font-size: 1.5em;
   }
 
   .presentation {
@@ -368,29 +372,13 @@ h2 {
   }
 
   .fonctionnement .fonctionnement_bloc {
-    font-size: 3.5vw;
+    font-size: 1.3em;
   }
   .fonctionnement .fonctionnement_bloc .fonctionnement_numero span {
-    font-size: 2.5vw;
+    font-size: 0.8em;
   }
 }
 @media screen and (min-width: 650px) {
-  h1 {
-    font-size: 5.7vw;
-  }
-
-  h2 {
-    font-size: 4vw;
-  }
-
-  h3 {
-    font-size: 3.7vw;
-  }
-
-  p {
-    font-size: 3.5vw;
-  }
-
   .localisation {
     height: 50px;
   }
@@ -399,13 +387,12 @@ h2 {
   }
   .localisation .search-bar {
     width: 350px;
-    margin-left: px;
     padding: 0;
-    font-size: 3vw;
+    font-size: 1.1em;
   }
   .localisation .search-bar::placeholder {
     color: #353535;
-    font-size: 3vw;
+    font-size: 1.1em;
   }
 
   .presentation {
@@ -436,21 +423,28 @@ h2 {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 3.5vw;
+    font-size: 1.5em;
   }
 
   .cards_heart_container i {
-    font-size: 4.5vw;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 800px) {
-  h2 {
-    font-size: 3.5vw;
+  h1 {
+    font-size: 2em;
   }
 
-  h3,
-p {
-    font-size: 3vw;
+  h2 {
+    font-size: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.5em;
   }
 
   .principal-layout {
@@ -463,17 +457,15 @@ p {
   }
   .localisation i {
     margin-left: 140px;
-    font-size: 2.5vw;
+    font-size: 1.5em;
   }
   .localisation .search-bar {
     width: 350px;
-    margin-left: px;
-    padding: 0;
-    font-size: 3vw;
+    font-size: 1.2em;
   }
   .localisation .search-bar::placeholder {
     color: #353535;
-    font-size: 3vw;
+    font-size: 1.2em;
   }
 
   .asideLeft {
@@ -485,16 +477,14 @@ p {
     background-color: white;
   }
   .presentation h1 {
-    font-size: 3.5vw;
     padding-bottom: 20px;
   }
   .presentation p {
-    font-size: 2.8vw;
     padding-bottom: 20px;
   }
   .presentation a {
     padding: 14px 20px;
-    font-size: 2.5vw;
+    font-size: 1.3em;
   }
 
   .asideRight {
@@ -506,15 +496,12 @@ p {
     margin: 0px 0px;
     background-color: #ffffff;
   }
-  .fonctionnement h2 {
-    font-size: 3vw;
-  }
   .fonctionnement .fonctionnement_bloc {
-    font-size: 2.5vw;
+    font-size: 1.3em;
     font-weight: 400;
   }
   .fonctionnement .fonctionnement_bloc .fonctionnement_numero span {
-    font-size: 2vw;
+    font-size: 0.8em;
   }
 
   .restaurants_mosaic {
@@ -532,7 +519,7 @@ p {
     width: 100px;
   }
   .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag span {
-    font-size: 2.5vw;
+    font-size: 1.2em;
   }
   .restaurants .restaurants_mosaic_cards .cards_heart_container {
     position: absolute;
@@ -540,7 +527,104 @@ p {
     right: 25px;
   }
   .restaurants .restaurants_mosaic_cards .cards_heart_container i {
-    font-size: 3.5vw;
+    font-size: 1.7em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .restaurants_mosaic_newtag {
+    width: 125px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 27px;
+  }
+
+  span {
+    font-size: 19px;
+  }
+
+  .principal-layout {
+    padding: 35px 60px;
+  }
+
+  .localisation {
+    height: 80px;
+  }
+  .localisation i {
+    margin-left: 60px;
+    font-size: 32px;
+  }
+  .localisation .search-bar {
+    width: 350px;
+    font-size: 35px;
+  }
+  .localisation .search-bar::placeholder {
+    color: #353535;
+    font-size: 35px;
+  }
+
+  .asideLeft {
+    width: 49%;
+  }
+
+  .presentation {
+    padding: 30px 19px 19px 21px;
+    background-color: white;
+  }
+  .presentation h1 {
+    padding-bottom: 20px;
+  }
+  .presentation p {
+    padding-bottom: 20px;
+  }
+  .presentation a {
+    padding: 14px 20px;
+    font-size: 26px;
+  }
+
+  .asideRight {
+    width: 49%;
+  }
+
+  .fonctionnement {
+    padding: 30px 19px 19px 21px;
+  }
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .fonctionnement .fonctionnement_bloc {
+    font-size: 25px;
+    font-weight: 400;
+    width: 89%;
+  }
+  .fonctionnement .fonctionnement_bloc i {
+    padding-left: 20px;
+  }
+
+  .restaurants .restaurants_mosaic_cards {
+    width: 24%;
+  }
+  .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag {
+    width: 90px;
+  }
+  .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag span {
+    font-size: 20px;
+  }
+  .restaurants .restaurants_mosaic_cards .cards_heart_container i {
+    font-size: 30px;
   }
 }
 .goback {
