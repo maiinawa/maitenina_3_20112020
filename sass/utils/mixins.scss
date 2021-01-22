@@ -28,11 +28,14 @@
 
 @mixin button-pink {
   display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @include pink-violet;
   @include box-shadow();
   border-radius: 50px;
 
+  white-space: nowrap;
   font-size: 4vw;
   color: white;
   text-decoration: none;

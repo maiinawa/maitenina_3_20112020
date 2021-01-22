@@ -37,3 +37,31 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: 650px) {
+  header {
+    height: 65px; /**/
+
+    .logo {
+      height: 35px;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    height: 80px; /**/
+
+    .logo {
+      height: 50px;
+    }
+  }
+  footer {
+    .footer_elements_bold {
+      font-size: 5vw;
+    }
+    a {
+      font-size: 2.2vw;
+    }
+  }
+}

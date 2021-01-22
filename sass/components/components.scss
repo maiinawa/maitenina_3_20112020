@@ -1,15 +1,17 @@
-.heart-solid-container{
-    display: none;
+.heart-solid-container {
+  display: none;
 }
 
-.heart-container:hover{
-    .heart-solid-container{
+.heart-container:hover {
+  .heart-solid-container {
     display: inline;
-    @include gradient-color-icon;  
-    content: "\f004";    
+    padding: 5px 1px 0 1px; /*eviter le coeur qui se coupe au hover*/
 
-    }
-    .heart-empty-container{
-        display: none;
-    }
+    @include gradient-color-icon;
+    content: "\f004";
+  }
+  .heart-empty-container {
+    display: none;
+    padding: 5px 1px 0 1px; /*eviter le coeur qui se coupe au hover*/
+  }
 }
