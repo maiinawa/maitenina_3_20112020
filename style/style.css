@@ -4,10 +4,11 @@
 @keyframes slideInUp {
   0% {
     transform: translateY(40%);
-    visibility: visible;
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes loader {
@@ -717,9 +718,7 @@ p {
   background-color: #99e2d0;
   border-radius: 15px;
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
-  animation-name: slideInUp;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation: slideInUp 1.5s ease-out;
 }
 .menu_block_text {
   z-index: 1;

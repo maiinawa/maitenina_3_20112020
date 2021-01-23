@@ -82,9 +82,7 @@
     border-radius: 15px;
     @include box-shadow;
 
-    animation-name: slideInUp;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation: slideInUp 1.5s ease-out;
 
     &_text {
       z-index: 1;
