@@ -1,13 +1,26 @@
 .goback {
   position: absolute;
-  top: 22px;
+  top: 20px;
   left: 25px;
 
   color: #353535;
+  font-size: 4.4vw;
 }
 
 .menu {
   z-index: 1;
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
 
   &_img {
     height: 260px;
@@ -71,6 +84,7 @@
 
     animation-name: slideInUp;
     animation-duration: 1s;
+    animation-delay: 0.5s;
 
     &_text {
       z-index: 1;
@@ -97,17 +111,17 @@
         }
 
         & h4 {
-          font-size: 2vh;
+          font-size: 1em;
         }
 
         & p {
-          font-size: 1.7vh;
+          font-size: 0.87em;
         }
       }
 
       &_price {
         background-color: white;
-        font-size: 1.5vh;
+        font-size: 0.9em;
 
         margin: 28px 10px 0 -5px;
       }
@@ -121,7 +135,7 @@
 
     text-align: right;
     color: white;
-    font-size: 2.4vh;
+    font-size: 1.3em;
 
     transition: all 0.5s ease;
   }
@@ -152,4 +166,233 @@
 
 input[type="checkbox"] {
   display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .goback {
+    top: 17px;
+
+    font-size: 4.2vw;
+  }
+  .menu {
+    .fa-heart {
+      font-size: 1.7em;
+    }
+    .fa-check-circle {
+      margin: 4% 0 0 100%;
+
+      font-size: 1.5em;
+    }
+    .menu_block:hover .fa-check-circle {
+      margin: 4% 0 0 89.5%;
+    }
+    &_button {
+      margin: 60px auto 35px;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .goback {
+    top: 17px;
+
+    font-size: 4.1vw;
+  }
+  .menu {
+    h1 {
+      font-size: 1.6em;
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+    &_carte-top-align {
+      padding: 0px 20px;
+    }
+    &_block_text_plats p {
+      font-size: 1em;
+    }
+    .fa-heart {
+      font-size: 1.9em;
+    }
+    .fa-check-circle {
+      margin: 3% 0 0 100%;
+
+      font-size: 1.6em;
+    }
+    .menu_block:hover .fa-check-circle {
+      margin: 3% 0 0 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .goback {
+    top: 23px;
+    left: 35px;
+
+    font-size: 4.1vw;
+  }
+  .menu {
+    h1 {
+      font-size: 1.9em;
+    }
+
+    h4 {
+      font-size: 1.4em;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+    img {
+      height: 380px;
+    }
+    &_carte-top-align {
+      padding: 10px 30px 0px;
+    }
+    &_categories {
+      padding: 40px 15px 0px;
+    }
+    &_block_text_plats p {
+      font-size: 1.2em;
+    }
+    .fa-heart {
+      font-size: 2em;
+    }
+    .menu_block:hover .menu_block_text {
+      width: 87%;
+    }
+    .menu_block:hover .fa-check-circle {
+      margin: 3% 0 0 91.5%;
+    }
+    .fa-check-circle {
+      margin: 3% 0 0 100%;
+
+      font-size: 1.8em;
+    }
+    &_button {
+      margin: 90px auto 35px;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .goback {
+    top: 18px;
+
+    font-size: 3.8vw;
+  }
+  .menu {
+    h1 {
+      font-size: 2.2em;
+    }
+
+    h4 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+    img {
+      height: 400px;
+    }
+    &_carte-top-align {
+      padding: 26px 40px 0px;
+    }
+    &_categories {
+      padding: 40px 15px 0px;
+      &_title {
+        margin: 0px 0px 40px 0px;
+      }
+    }
+    &_block_text_plats p {
+      font-size: 1.3em;
+    }
+    .menu_block:hover .menu_block_text {
+      width: 89%;
+    }
+    .menu_block:hover .fa-check-circle {
+      margin: 2.2% 0 0 92.5%;
+    }
+    .fa-check-circle {
+      margin: 2.2% 0 0 100%;
+
+      font-size: 2.1em;
+    }
+    .fa-heart {
+      font-size: 2.3em;
+    }
+    &_button {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .goback {
+    top: 18px;
+
+    font-size: 40px;
+  }
+  .menu {
+    h1 {
+      font-size: 35px;
+      margin: 0 50px 0 0;
+    }
+
+    h4 {
+      font-size: 17px;
+    }
+
+    p {
+      font-size: 19px;
+    }
+    img {
+      height: 400px;
+    }
+    &_carte-top-align {
+      justify-content: start;
+    }
+
+    .line-layout {
+      display: flex;
+      justify-content: space-around;
+    }
+    &_categories {
+      padding: 40px 0px 0px;
+      width: 31%;
+      &_title {
+        margin: 0px 0px 40px 0px;
+      }
+    }
+    &_block_text {
+      &_plats {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .menu_block:hover .menu_block_text {
+      width: 85%;
+    }
+    .menu_block:hover .fa-check-circle {
+      margin: 19px 0 0 89%;
+    }
+    .fa-check-circle {
+      margin: 19px 0 0 100%;
+
+      font-size: 25px;
+    }
+    .fa-heart {
+      font-size: 2.3em;
+    }
+  }
 }
