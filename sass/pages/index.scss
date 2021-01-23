@@ -408,6 +408,12 @@ p {
     font-size: 19px;
   }
 
+  .principal-layout,
+  .restaurants {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
   .principal-layout {
     justify-content: space-around;
     padding: 28px 100px;
