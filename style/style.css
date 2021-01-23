@@ -582,7 +582,7 @@ p {
 
   .principal-layout,
 .restaurants {
-    max-width: 1800px;
+    max-width: 1650px;
     margin: 0 auto;
   }
 
@@ -948,6 +948,10 @@ input[type=checkbox] {
     font-size: 40px;
   }
 
+  .menu {
+    max-width: 1650px;
+    margin: 0 auto;
+  }
   .menu h1 {
     font-size: 35px;
     margin: 0 50px 0 0;
