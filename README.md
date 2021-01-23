@@ -1,18 +1,17 @@
 # maitenina_3_20112020
-OpenCclassrooms - Projet 3 - Oh My food
+OpenClassrooms - Projet 3 - Oh My food
 
-Practice CSS avanced style with animation.
+Practice CSS advanced style with animations for a fictive company.
 
-MOBILE 375PX ONLY FOR THE MOMENT
+Static and responsive website. Mobile first approach.
+
+Tech used : HTML, CSS with SASS
+
 
 TO COME
-
-General:
-- responsive to tablette and desktop
 
 Index :
 - loading page
 
 Menus pages :
-- fix validation icon 
-- correct block menu details animation
+ - correct block menu details animation
