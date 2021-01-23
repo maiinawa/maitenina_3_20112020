@@ -3,12 +3,14 @@ OpenClassrooms - Projet 3 - Oh My food
 
 Practice CSS advanced style with animations for a fictive company.
 
-Static and responsive website. Mobile first approach.
+Static responsive website. Mobile first approach.
 
 Tech used : HTML, CSS with SASS
 
 
 TO COME
+
+* fix img fit-position
 
 Index :
 - loading page
