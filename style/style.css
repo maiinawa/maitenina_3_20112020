@@ -126,15 +126,18 @@ footer {
   color: white;
 }
 footer .footer_elements_bold {
+  margin-bottom: -15px;
   font-family: "Shrikhand";
-  font-size: 5vw;
+  font-size: 1.6em;
+  line-height: 1.6;
 }
 footer a {
   color: white;
 }
 footer .fa-ul {
   margin-left: 25px;
-  line-height: 1.8;
+  line-height: 1.4;
+  font-size: 1em;
 }
 footer .fa-ul .fa-ul li {
   padding-left: 5px;
@@ -162,11 +165,27 @@ footer .fa-ul .footer_list_no-puce {
     height: 50px;
   }
 
-  footer .footer_elements_bold {
-    font-size: 5vw;
+  footer_elements_bold {
+    font-size: 1.8em;
   }
   footer a {
-    font-size: 2.2vw;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    display: flex;
+    margin: auto;
+    padding: 10px 0px 15px 0px;
+    width: 100%;
+  }
+  footer li {
+    display: inline;
+    padding: 0px 90px 0px 0px;
+    line-height: 1.8;
+  }
+  .footer_elements_bold {
+    padding: 15px 120px 0px 80px;
   }
 }
 h1 {
@@ -473,7 +492,7 @@ p {
   }
 
   .presentation {
-    padding: 30px 19px 19px 21px;
+    padding: 41px 19px 19px 21px;
     background-color: white;
   }
   .presentation h1 {
@@ -549,7 +568,7 @@ p {
   }
 
   p {
-    font-size: 27px;
+    font-size: 22px;
   }
 
   span {
@@ -557,74 +576,66 @@ p {
   }
 
   .principal-layout {
-    padding: 35px 60px;
+    justify-content: space-around;
+    padding: 28px 100px;
   }
 
   .localisation {
-    height: 80px;
+    height: 60px;
   }
   .localisation i {
-    margin-left: 60px;
-    font-size: 32px;
+    margin-left: 90px;
+    font-size: 22px;
   }
   .localisation .search-bar {
-    width: 350px;
-    font-size: 35px;
+    padding-left: 19px;
+    font-size: 26px;
   }
   .localisation .search-bar::placeholder {
-    color: #353535;
-    font-size: 35px;
-  }
-
-  .asideLeft {
-    width: 49%;
-  }
-
-  .presentation {
-    padding: 30px 19px 19px 21px;
-    background-color: white;
-  }
-  .presentation h1 {
-    padding-bottom: 20px;
-  }
-  .presentation p {
-    padding-bottom: 20px;
-  }
-  .presentation a {
-    padding: 14px 20px;
     font-size: 26px;
   }
 
-  .asideRight {
-    width: 49%;
+  .asideLeft {
+    width: 38%;
   }
 
-  .fonctionnement {
-    padding: 30px 19px 19px 21px;
+  .presentation a {
+    font-size: 26px;
   }
+  .presentation h1 {
+    padding-bottom: 50px;
+  }
+  .presentation p {
+    padding-bottom: 50px;
+  }
+
+  .asideRight {
+    width: 38%;
+  }
+
   .fonctionnement h2 {
     text-align: center;
   }
   .fonctionnement .fonctionnement_bloc {
     font-size: 25px;
     font-weight: 400;
-    width: 89%;
+    width: 100%;
   }
   .fonctionnement .fonctionnement_bloc i {
-    padding-left: 20px;
+    padding-left: 7%;
+  }
+  .fonctionnement .fonctionnement_bloc span {
+    padding-left: 7%;
   }
 
+  .restaurants {
+    padding: 30px 40px;
+  }
+  .restaurants h2 {
+    padding: 0px 20px 20px;
+  }
   .restaurants .restaurants_mosaic_cards {
     width: 24%;
-  }
-  .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag {
-    width: 90px;
-  }
-  .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag span {
-    font-size: 20px;
-  }
-  .restaurants .restaurants_mosaic_cards .cards_heart_container i {
-    font-size: 30px;
   }
 }
 .goback {
