@@ -38,55 +38,31 @@ p {
     border: none;
   }
 }
-
-.aside__container {
+.fonctionnement,
+.presentation {
+  padding: 41px 19px 42px 19px;
   display: flex;
   flex-direction: column;
-  padding: 33px 15px 19px 25px;
+}
 
+.presentation {
   text-align: center;
-
   background-color: $grey;
 
-  h1 {
-    padding: 0px 15% 20px 12%;
-    margin: auto;
-  }
-
-  p {
-    padding: 13px 0px 20px 8px;
-  }
-
   a {
-    margin: 25px auto;
-    padding: 14px 0px;
-    width: fit-content;
-
     @include button-pink;
   }
 }
 
 .fonctionnement {
-  padding: 41px 12px 42px 19px;
-
   background-color: $white;
-  h2 {
-    margin: 0;
-    padding: 0px 0px 30px 0px;
-  }
-
-  .fonctionnement__mosaic {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-  }
 
   .fonctionnement__mosaic__bloc {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
-
-    @include div-squarred();
-
+    @include div-squarred(#f6f6f6);
+    padding: 20px;
+    margin: 0 auto 25px auto;
     .icon__number {
       @include circle();
 
@@ -95,10 +71,10 @@ p {
         color: white;
       }
     }
-    i,
-    .fonctionnement__text {
-      margin: 0px 0px 0px 32px;
+    i {
+      margin: 0 32px;
     }
+
     &:hover {
       background-color: #f5edff;
 
