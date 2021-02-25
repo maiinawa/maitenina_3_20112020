@@ -134,6 +134,24 @@ header .logo {
   height: 26px;
 }
 
+@media screen and (min-width: 650px) {
+  header {
+    height: 65px;
+    /**/
+  }
+  header .logo {
+    height: 35px;
+  }
+}
+@media screen and (min-width: 800px) {
+  header {
+    height: 80px;
+    /**/
+  }
+  header .logo {
+    height: 50px;
+  }
+}
 footer {
   padding: 26px 19px 20px 24px;
   background-color: #353535;
@@ -161,24 +179,7 @@ footer .fa-ul .footer__list__no-puce {
   margin-left: -25px;
 }
 
-@media screen and (min-width: 650px) {
-  header {
-    height: 65px;
-    /**/
-  }
-  header .logo {
-    height: 35px;
-  }
-}
 @media screen and (min-width: 800px) {
-  header {
-    height: 80px;
-    /**/
-  }
-  header .logo {
-    height: 50px;
-  }
-
   footer_elements_bold {
     font-size: 1.8em;
   }
@@ -193,17 +194,17 @@ footer .fa-ul .footer__list__no-puce {
     padding: 10px 0px 15px 0px;
     width: 100%;
   }
-  footer .footer-content {
+  footer .footer__content {
     margin: 0 auto;
     display: flex;
   }
   footer li {
     display: inline;
-    padding: 0px 90px 0px 0px;
+    padding: 0px 70px 0px 0px;
     line-height: 1.8;
   }
-  .footer_elements_bold {
-    padding: 15px 120px 0px 80px;
+  .footer__elements__bold {
+    padding: 15px 80px 0px 80px;
   }
 }
 h1 {
@@ -236,7 +237,7 @@ p {
 .localisation i {
   color: #353535;
 }
-.localisation .search-bar {
+.localisation .searchBar {
   padding: 0 0 0 15px;
   width: 150px;
   color: #353535;
@@ -247,21 +248,21 @@ p {
   border: none;
 }
 
-.presentation {
+.aside__container {
   display: flex;
   flex-direction: column;
   padding: 33px 15px 19px 25px;
   text-align: center;
   background-color: #f6f6f6;
 }
-.presentation h1 {
+.aside__container h1 {
   padding: 0px 15% 20px 12%;
   margin: auto;
 }
-.presentation p {
+.aside__container p {
   padding: 13px 0px 20px 8px;
 }
-.presentation a {
+.aside__container a {
   margin: 25px auto;
   padding: 14px 0px;
   width: fit-content;
@@ -286,12 +287,12 @@ p {
   margin: 0;
   padding: 0px 0px 30px 0px;
 }
-.fonctionnement .fonctionnement_mosaic {
+.fonctionnement .fonctionnement__mosaic {
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
-.fonctionnement .fonctionnement_bloc {
+.fonctionnement .fonctionnement__mosaic__bloc {
   font-size: 1em;
   font-weight: 500;
   display: flex;
@@ -305,7 +306,7 @@ p {
   align-items: center;
   position: relative;
 }
-.fonctionnement .fonctionnement_bloc .fonctionnement_numero {
+.fonctionnement .fonctionnement__mosaic__bloc .icon__number {
   position: absolute;
   background-color: #9356dc;
   height: 22px;
@@ -315,32 +316,32 @@ p {
   text-align: center;
   line-height: 22px;
 }
-.fonctionnement .fonctionnement_bloc .fonctionnement_numero span {
+.fonctionnement .fonctionnement__mosaic__bloc .icon__number span {
   font-size: 0.9em;
   color: white;
 }
-.fonctionnement .fonctionnement_bloc i,
-.fonctionnement .fonctionnement_bloc .fonctionnement_bloc_text {
+.fonctionnement .fonctionnement__mosaic__bloc i,
+.fonctionnement .fonctionnement__mosaic__bloc .fonctionnement__text {
   margin: 0px 0px 0px 32px;
 }
-.fonctionnement .fonctionnement_bloc:hover {
+.fonctionnement .fonctionnement__mosaic__bloc:hover {
   background-color: #f5edff;
 }
-.fonctionnement .fonctionnement_bloc:hover > i {
+.fonctionnement .fonctionnement__mosaic__bloc:hover > i {
   color: #9356dc;
 }
 
-.restaurants {
+.restaurants__wrapper {
   display: flex;
   flex-direction: column;
   padding: 35px 12px 64px 12px;
   background-color: #f6f6f6;
 }
-.restaurants h2 {
+.restaurants__wrapper h2 {
   margin: 0;
   padding: 0px 0px 15px 0px;
 }
-.restaurants .restaurants_mosaic_cards {
+.restaurants__wrapper .restaurants__mosaic__cards {
   position: relative;
   z-index: 1;
   display: flex;
@@ -350,13 +351,13 @@ p {
   background-color: #ffffff;
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
 }
-.restaurants .restaurants_mosaic_cards img {
+.restaurants__wrapper .restaurants__mosaic__cards img {
   height: 173px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag {
+.restaurants__wrapper .restaurants__mosaic__cards .restaurants__cards__newtag {
   z-index: 2;
   position: absolute;
   padding: 10px 10px 10px 10px;
@@ -368,11 +369,11 @@ p {
   text-align: center;
   color: #008766;
 }
-.restaurants .restaurants_mosaic_cards .restaurants_mosaic_cards_text {
+.restaurants__wrapper .restaurants__mosaic__cards .restaurants__mosaic__cards__text {
   padding: 15px 0px 15px 14px;
   margin: 0;
 }
-.restaurants .restaurants_mosaic_cards .cards_heart_container {
+.restaurants__wrapper .restaurants__mosaic__cards .cards_heart_container {
   position: absolute;
   bottom: 32px;
   right: 16px;
@@ -395,20 +396,20 @@ p {
     font-size: 1.5em;
   }
 
-  .presentation {
+  .aside__container {
     padding: 50px 19px 19px 21px;
   }
-  .presentation h1 {
+  .aside__container h1 {
     padding: 0px 15% 20px 12%;
   }
-  .presentation p {
+  .aside__container p {
     padding: 13px 0px 15px 8px;
   }
 
-  .fonctionnement .fonctionnement_bloc {
+  .fonctionnement__mosaic__bloc {
     font-size: 1.3em;
   }
-  .fonctionnement .fonctionnement_bloc .fonctionnement_numero span {
+  .fonctionnement .icon__number span {
     font-size: 0.8em;
   }
 }
@@ -416,24 +417,24 @@ p {
   .localisation {
     height: 50px;
   }
-  .localisation .search-bar::placeholder {
+  .localisation .searchBar::placeholder {
     color: #353535;
   }
 
-  .presentation {
+  .aside__container {
     display: flex;
     flex-direction: column;
     padding: 50px 80px 50px;
     text-align: center;
     background-color: #f6f6f6;
   }
-  .presentation h1 {
+  .aside__container h1 {
     padding: 0px 15% 20px 12%;
   }
-  .presentation p {
+  .aside__container p {
     padding: 13px 0px 15px 8px;
   }
-  .presentation a {
+  .aside__container a {
     margin: 25px auto;
     padding: 14px 0px;
     width: fit-content;
@@ -472,7 +473,7 @@ p {
     font-size: 1.5em;
   }
 
-  .wrap__asides__presentation {
+  .presentation__wrapper {
     display: flex;
     padding-top: 25px;
     background-color: white;
@@ -485,11 +486,11 @@ p {
     margin-left: 140px;
     font-size: 1.5em;
   }
-  .localisation .search-bar {
+  .localisation .searchBar {
     width: 350px;
     font-size: 1.2em;
   }
-  .localisation .search-bar::placeholder {
+  .localisation .searchBar::placeholder {
     color: #353535;
     font-size: 1.2em;
   }
@@ -498,17 +499,17 @@ p {
     width: 50%;
   }
 
-  .presentation {
+  .aside__container {
     padding: 41px 19px 19px 21px;
     background-color: white;
   }
-  .presentation h1 {
+  .aside__container h1 {
     padding-bottom: 20px;
   }
-  .presentation p {
+  .aside__container p {
     padding-bottom: 20px;
   }
-  .presentation a {
+  .aside__container a {
     padding: 14px 20px;
     font-size: 1.3em;
   }
@@ -522,42 +523,43 @@ p {
     margin: 0px 0px;
     background-color: #ffffff;
   }
-  .fonctionnement .fonctionnement_bloc {
+  .fonctionnement__mosaic__bloc {
     font-size: 1.3em;
     font-weight: 400;
   }
-  .fonctionnement .fonctionnement_bloc .fonctionnement_numero span {
+  .fonctionnement .icon__number span {
     font-size: 0.8em;
   }
 
-  .restaurants_mosaic {
+  .restaurants__mosaic {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .restaurants .restaurants_mosaic_cards {
+  .restaurants__mosaic__cards {
     width: 49%;
   }
-  .restaurants .restaurants_mosaic_cards img {
+  .restaurants__mosaic__cards img {
     height: 185px;
   }
-  .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag {
+  .restaurants__mosaic__cards .restaurants__cards__newtag {
     width: 100px;
   }
-  .restaurants .restaurants_mosaic_cards .restaurants_mosaic_newtag span {
+  .restaurants__mosaic__cards .restaurants__cards__newtag span {
     font-size: 1.2em;
   }
-  .restaurants .restaurants_mosaic_cards .cards_heart_container {
+  .restaurants__mosaic__cards .cards_heart_container {
     position: absolute;
     bottom: 32px;
     right: 25px;
   }
-  .restaurants .restaurants_mosaic_cards .cards_heart_container i {
+  .restaurants__mosaic__cards .cards_heart_container i {
     font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1000px) {
-  .restaurants_mosaic_newtag {
+  .restaurants__cards__newtag {
     width: 125px;
   }
 }
@@ -582,13 +584,13 @@ p {
     font-size: 19px;
   }
 
-  .wrap__asides__presentation,
-.restaurants {
+  .presentation__wrapper,
+.restaurants__wrapper {
     max-width: 1650px;
     margin: 0 auto;
   }
 
-  .wrap__asides__presentation {
+  .presentation__wrapper {
     justify-content: space-around;
     padding: 28px 100px;
   }
@@ -600,11 +602,11 @@ p {
     margin-left: 90px;
     font-size: 22px;
   }
-  .localisation .search-bar {
+  .localisation .searchBar {
     padding-left: 19px;
     font-size: 26px;
   }
-  .localisation .search-bar::placeholder {
+  .localisation .searchBar::placeholder {
     font-size: 26px;
   }
 
@@ -612,13 +614,13 @@ p {
     width: 38%;
   }
 
-  .presentation a {
+  .aside__container a {
     font-size: 26px;
   }
-  .presentation h1 {
+  .aside__container h1 {
     padding-bottom: 50px;
   }
-  .presentation p {
+  .aside__container p {
     padding-bottom: 50px;
   }
 
@@ -629,25 +631,25 @@ p {
   .fonctionnement h2 {
     text-align: center;
   }
-  .fonctionnement .fonctionnement_bloc {
+  .fonctionnement .fonctionnement__mosaic__bloc {
     font-size: 25px;
     font-weight: 400;
     width: 100%;
   }
-  .fonctionnement .fonctionnement_bloc i {
+  .fonctionnement .fonctionnement__mosaic__bloc i {
     padding-left: 7%;
   }
-  .fonctionnement .fonctionnement_bloc span {
+  .fonctionnement .fonctionnement__mosaic__bloc span {
     padding-left: 7%;
   }
 
-  .restaurants {
+  .restaurants__wrapper {
     padding: 30px 40px;
   }
-  .restaurants h2 {
+  .restaurants__wrapper h2 {
     padding: 0px 20px 20px;
   }
-  .restaurants .restaurants_mosaic_cards {
+  .restaurants__wrapper .restaurants__mosaic__cards {
     width: 24%;
   }
 }
