@@ -6,3 +6,40 @@
   color: #353535;
   font-size: 4.4vw;
 }
+@media screen and (min-width: 500px) {
+  .goback {
+    top: 17px;
+
+    font-size: 4.2vw;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .goback {
+    top: 17px;
+
+    font-size: 4.1vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  .goback {
+    top: 23px;
+    left: 35px;
+
+    font-size: 4.1vw;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .goback {
+    top: 18px;
+
+    font-size: 3.8vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .goback {
+    top: 18px;
+
+    font-size: 40px;
+  }
+}
