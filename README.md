@@ -11,6 +11,7 @@ Tech used : HTML, CSS with SASS
 TO COME
 
 * fix img fit-position
+* fix html w3c validation
 
 Index :
 - loading page
