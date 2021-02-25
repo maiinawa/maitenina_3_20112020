@@ -6,6 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css">
 
+        <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        <title>Oh My Food | Réservez le menu qui vous convient</title>
+
 
         <script src="https://kit.fontawesome.com/79d9690799.js" crossorigin="anonymous"></script>
     </head>
@@ -14,18 +34,19 @@
         
         <header>
             <a href="index.html"><div class="goback"><i class="fas fa-arrow-left fa-lg"></i></div></a>
-            <div class="logo-link"><img class="logo" src="images/logo/ohmyfood@2x.svg"></div>
+            <div class="logo-link"><img class="logo" alt="logo oh my food" src="images/logo/ohmyfood@2x.svg"></div>
         </header>
 
         <main>
-            <section class="menu">
+            <article class="card">
 
-                <img class="menu_img" src="images/restaurants/lapalettedugout.jpg">
+                <img class="card__img" alt="A la française" src="images/restaurants/alafrancaise.jpg">
 
-                <form class="menu_carte">
-                    <div class="menu_carte-top-align">
+                <form class="card__menu">
 
-                        <h1>La palette du goût</h1>
+                    <div class="card__topLine">
+
+                        <h1>A la française</h1>
                         <div class="heart-container menu_heart_container">
                             <div class="heart-empty-container"><i class="far fa-heart fa-lg heart"></i></div>
                             <div class="heart-solid-container"><i class="fas fa-heart fa-lg heart-solid"></i></div>
@@ -34,162 +55,186 @@
 
                     <div class="line-layout">
 
-                        <section class="menu_categories">
+
+                        <div class="card__categories">
                             
-                            <div class="menu_categories_title"><p>ENTREES</p>
-                                <div class="menu_categories_underline"></div>
+                            <div class="card__categories__title">
+                                <span class="menu__section">ENTREES</span>
+                                <div class="card__categories__underline"></div>
                             </div>
                             
+                            <div class="btn__menu__meals">
 
-                            <label for="fricassee" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Fricassée d'escargot</h4>
-                                        <p>Au piment d'Espelette </p>
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
                                     </div>
-                                    <div class="menu_block_text_price"><h4>25€</h4></div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                            </label>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
 
-                            <label for="foiegras" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
+                            <div class="btn__menu__meals">
 
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Foie gras de canard mi-cuit</h4>
-                                        <p>Et ses copeaux de truffe noire</p>
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
                                     </div>
-                                    <div class="menu_block_text_price"><h4>35€</h4></div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                            </label>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
 
-                            <label for="oeufauplat" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
+                            <div class="btn__menu__meals">
 
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Oeuf au plat</h4>
-                                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
                                     </div>
-                                    <div class="menu_block_text_price"><h4>20€</h4></div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                            </label>
-                        </section>
-
-                            <section class="menu_categories">
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
                             
-                                <div class="menu_categories_title"><p>PLATS</p>
-                                    <div class="menu_categories_underline"></div>
-                                </div>
-
-                            <label for="boeufauxherbes" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Filet de boeuf aux herbes</h4>
-                                        <p>Accompagné de sa ribambelle de légumes</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>40€</h4></div>
-                                </div>
-                            </label>
-
-                            <label for="parmentier" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Parmentier de queue de boeuf</h4>
-                                        <p>À la truffe noire sur sa purée de panais</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>35€</h4></div>
-                                </div>
-                            </label>
-
-                            <label for="turbot" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Filet de turbot</h4>
-                                        <p>Aux agrumes</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>44€</h4></div>
-                                </div>
-                            </label>
-
-                        </section>
-
-                        <section class="menu_categories">
-                    
-                        <div class="menu_categories_title"><p>DESSERTS</p>
-                            <div class="menu_categories_underline"></div>
                         </div>
 
-                        <label for="parisbrest" class="menu_block">
-                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                            <i class="fas fa-check-circle fa-lg"></i>
-
-                            <div class="menu_block_text">
-                                <div class="menu_block_text_plats">
-                                    <h4>Paris-Brest</h4>
-                                    <p>Revisité</p>
-                                </div>
-                                <div class="menu_block_text_price"><h4>18€</h4></div>
+                        <div class="card__categories">
+                            
+                            <div class="card__categories__title">
+                                <span class="menu__section">ENTREES</span>
+                                <div class="card__categories__underline"></div>
                             </div>
-                        </label>
 
-                        <label for="macaron" class="menu_block">
-                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                            <i class="fas fa-check-circle fa-lg"></i>
+                            <div class="btn__menu__meals">
 
-                            <div class="menu_block_text">
-                                <div class="menu_block_text_plats">
-                                    <h4>Macaron au chocolat d'exception </h4>
-                                    <p>Et glace à la vanille de Madagascar</p>
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                                <div class="menu_block_text_price"><h4>22€</h4></div>
-                            </div>
-                        </label>
-
-                        <label for="mousse" class="menu_block">
-                            <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                            <i class="fas fa-check-circle fa-lg"></i>
-
-                            <div class="menu_block_text">
-                                <div class="menu_block_text_plats">
-                                    <h4>Mousse au chocolat </h4>
-                                    <p>Au piment d'Espelette et à la truffe noire</p>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
                                 </div>
-                                <div class="menu_block_text_price"><h4>23€</h4></div>
-                            </div>
-                        </label>
-
                         
-                        </section>
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+                        </div>
+
+
+                        <div class="card__categories">
+                        
+                            <div class="card__categories__title">
+                                <span class="menu__section">ENTREES</span>
+                                <div class="card__categories__underline"></div>
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+                            
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+
+
+                            
+                        </div>
 
                     </div>
-
                     
                     <button type="submit" class="menu_button">Commander</button>
 
                 </form>
 
 
-            </section>
+            </article>
 
         </main>
 
         <footer>
-            <section class="footer-content">
+            <div class="footer-content">
                 <p class="footer_elements_bold">ohmyfood</p>
 
                 <ul class="fa-ul">
@@ -198,7 +243,7 @@
                     <li class="footer_list_no-puce"><a href="">Mentions légales</a></li>
                     <li class="footer_list_no-puce"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                 </ul>
-            </section>
+            </div>
         </footer>
 
 

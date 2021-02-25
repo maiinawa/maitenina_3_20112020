@@ -1,13 +1,4 @@
-.goback {
-  position: absolute;
-  top: 20px;
-  left: 25px;
-
-  color: #353535;
-  font-size: 4.4vw;
-}
-
-.menu {
+.card {
   z-index: 1;
 
   h1 {
@@ -27,12 +18,12 @@
     object-fit: cover;
   }
 
-  &_carte {
+  &__menu {
     z-index: 2;
     position: relative;
     width: 100%;
     padding: 30px 12px 57px 12px;
-    margin-top: -60px;
+    margin-top: -50px;
     box-sizing: border-box;
 
     border-top-right-radius: 50px;
@@ -40,7 +31,7 @@
     background-color: white;
   }
 
-  &_carte-top-align {
+  &__topLine {
     display: flex;
     justify-content: space-between;
     padding: 0px 20px 0px 8px;
@@ -49,17 +40,17 @@
     font-family: "Shrikhand";
   }
 
-  &_categories {
+  &__categories {
     display: flex;
     flex-direction: column;
     padding: 40px 0px 0px 0px;
 
-    &_title {
+    &__title {
       position: relative;
       margin: 0px 0px 25px 0px;
     }
 
-    &_underline {
+    &__underline {
       position: absolute;
       width: 40px;
       bottom: -9px;
@@ -67,99 +58,91 @@
       border-top: 3px solid $third-color;
     }
   }
+}
 
-  &_block {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-bottom: 9px;
-
+.btn__menu__meals {
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 9px;
+  @include box-shadow;
+}
+.typo__menu__price {
+  margin: 20px 0 0 10px;
+  background-color: yellow;
+}
+.bloc {
+  &__menu__text {
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
 
-    border: none;
+  &__validation__animation {
+    position: absolute;
+    z-index: 2;
+    right: -15%;
+    text-align: center;
     background-color: $third-color;
-    border-radius: 15px;
-    @include box-shadow;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 15%;
+    height: 100%;
+    transition: all 0.5s ease;
 
-    animation: slideInUp 1.5s ease-out;
-
-    &_text {
-      z-index: 1;
-      position: relative;
-      display: flex;
-      width: 100%;
-
-      background-color: white;
-      border-radius: 15px;
-
+    .icon__animation {
+      margin: 1.3rem auto 0 auto;
+      font-size: 1.2rem;
       transition: all 0.5s ease;
-
-      &_plats {
-        background-color: white;
-        width: 83.5%;
-        margin: 10px 10px;
-        padding: 0;
-
-        & h4,
-        p {
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-        }
-
-        & h4 {
-          font-size: 1em;
-        }
-
-        & p {
-          font-size: 0.87em;
-        }
-      }
-
-      &_price {
-        background-color: white;
-        font-size: 0.9em;
-
-        margin: 28px 10px 0 -5px;
-      }
+      color: white;
     }
   }
+}
+.bloc__text__animation {
+  z-index: 3;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
 
-  .fa-check-circle {
-    z-index: 2;
-    margin: 6% 0 0 100%;
-    position: absolute;
+.btn__menu__meals:hover .bloc__text__animation {
+  width: 80.5%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 
-    text-align: right;
-    color: white;
-    font-size: 1.3em;
-
-    transition: all 0.5s ease;
-  }
-
-  .menu_block:hover .menu_block_text {
-    width: 85%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .menu_block:hover .fa-check-circle {
-    margin: 6% 0 0 89%;
-    transform: rotate(2turn);
-  }
-
-  &_button {
-    @include button-pink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 40px;
-    margin: 35px auto 15px auto;
-
-    outline: none;
+.btn__menu__meals:hover {
+  & .bloc__validation__animation {
     border: none;
+    right: 0%;
+    width: 15%;
   }
+  & .icon__animation {
+    display: block;
+    margin: 1.3rem auto 0 auto;
+    transform: rotate(3turn);
+  }
+}
+
+.menu_button {
+  @include button-pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 40px;
+  margin: 35px auto 15px auto;
+
+  outline: none;
+  border: none;
 }
 
 input[type="checkbox"] {

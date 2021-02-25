@@ -6,18 +6,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css">
 
+        <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
-        <script src="https://kit.fontawesome.com/79d9690799.js" crossorigin="anonymous"></script>
+        <title>Oh My Food | Réservez le menu qui vous convient</title>
+        <script  src="https://kit.fontawesome.com/79d9690799.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         
-        <div class="container_loader">
-            <div class="loader"></div>
+        <div class="loadingPage">
+            <div class="loadingPage__spinner"></div>
         </div>
 
             <header>
-                <img class="logo" src="images/logo/ohmyfood@2x.svg">
+                <img class="logo" alt="logo oh my food" src="images/logo/ohmyfood@2x.svg">
             </header>
 
             <main>
@@ -26,27 +44,27 @@
                     
                      <div class="localisation">
 
-                         <i class="fas fa-map-marker-alt"></i><input type="search" class="search-bar" placeholder="Paris, Belleville">
+                        <div class="localisation_bar"><i class="fas fa-map-marker-alt"></i><input type="search" class="search-bar" placeholder="Paris, Belleville"></div>
                     
                      </div>
 
-                <section class="principal-layout">
+                <div class="wrap__asides__presentation">
 
 
-                    <section class="asideLeft">
+                    <aside class="asideLeft">
 
 
 
                             <section class=presentation>
 
-                                <h1 class="presentation_slogan">Réservez le menu qui vous convient</h1>
+                                <h2>Réservez le menu qui vous convient</h2>
                                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                                 <a class="button-pink" href="#restaurants">Explorez nos restaurants</a>
                             </section>
-                    </section>
+                        </aside>
 
                     
-                    <section class="asideRight">
+                    <aside class="asideRight">
 
                         <!--mode emploi app 3 boutons -->
 
@@ -60,10 +78,10 @@
                             </div>
 
                         </section>
-                    </section>
-                </section>
+                    </aside>
+                </div>
 
-            <!--affichage restaurants -->
+                <!--affichage restaurants -->
 
 
                 <section class="restaurants">
@@ -78,7 +96,7 @@
                             </div>
                             <a href="la-palette-du-gout.html">
 
-                            <img class="restaurants-img" src="images/restaurants/lapalettedugout.jpg">
+                            <img class="restaurants-img" alt ="La palette du gout" src="images/restaurants/lapalettedugout.jpg">
                             <div class="restaurants_mosaic_newtag"><span>Nouveau</span></div>
                             <div class="restaurants_mosaic_cards_text">
                                 <h3>La palette du goût</h3>
@@ -92,7 +110,7 @@
                                 <div class="heart-solid-container"><i class="fas fa-heart fa-lg heart-solid"></i></div>
                             </div>
                             <a href="la-note-enchantee.html">
-                            <img class="restaurants-img" src="images/restaurants/lanoteenchantee.jpg">
+                            <img class="restaurants-img" alt ="La note enchantée" src="images/restaurants/lanoteenchantee.jpg">
                             <div class="restaurants_mosaic_newtag"><span>Nouveau</span></div>
                             <div class="restaurants_mosaic_cards_text">
                                 <h3>La note enchantée</h3>
@@ -107,7 +125,7 @@
                                 <div class="heart-solid-container"><i class="fas fa-heart fa-lg heart-solid"></i></div>
                             </div>
                             <a href="a-la-francaise.html">
-                            <img class="restaurants-img" src="images/restaurants/alafrancaise.jpg">
+                            <img class="restaurants-img" alt ="A la française" src="images/restaurants/alafrancaise.jpg">
                             <div class="restaurants_mosaic_cards_text">
                                 <h3>A la française</h3>
                                 <p>Cité Rouge</p>
@@ -121,7 +139,7 @@
                                 <div class="heart-solid-container"><i class="fas fa-heart fa-lg heart-solid"></i></div>
                             </div>
                             <a href="le-delice-des-sens.html">
-                            <img class="restaurants-img" src="images/restaurants/ledelicedessens.jpg">
+                            <img class="restaurants-img" alt="Le délice des sens" src="images/restaurants/ledelicedessens.jpg">
                             <div class="restaurants_mosaic_cards_text">
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
@@ -139,7 +157,7 @@
 
 
             <footer>
-                <section class="footer-content">
+                <div class="footer-content">
                     <p class="footer_elements_bold">ohmyfood</p>
 
                     <ul class="fa-ul">
@@ -148,7 +166,7 @@
                         <li class="footer_list_no-puce"><a href="">Mentions légales</a></li>
                         <li class="footer_list_no-puce"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                     </ul>
-                </section>
+                </div>
             </footer>
 
     </body>

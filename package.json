@@ -1,19 +1,11 @@
 {
-  "name": "maitenina_3_20112020",
+  "name": "projet3-ohmyfood",
   "version": "1.0.0",
-  "description": "projet 3 omf web app",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style/style.css"
+    "sass": "sass --watch sass/main.scss:style/style.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leslignesdemaina/maitenina_3_20112020.git"
-  },
-  "author": "maite nina",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leslignesdemaina/maitenina_3_20112020/issues"
-  },
-  "homepage": "https://github.com/leslignesdemaina/maitenina_3_20112020#readme"
+  "description": ""
 }

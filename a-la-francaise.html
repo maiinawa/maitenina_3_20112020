@@ -6,6 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css">
 
+        <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        <title>Oh My Food | Réservez le menu qui vous convient</title>
+
 
         <script src="https://kit.fontawesome.com/79d9690799.js" crossorigin="anonymous"></script>
     </head>
@@ -14,17 +34,17 @@
         
         <header>
             <a href="index.html"><div class="goback"><i class="fas fa-arrow-left fa-lg"></i></div></a>
-            <div class="logo-link"><img class="logo" src="images/logo/ohmyfood@2x.svg"></div>
+            <div class="logo-link"><img class="logo" alt="logo oh my food" src="images/logo/ohmyfood@2x.svg"></div>
         </header>
 
         <main>
-            <section class="menu">
+            <article class="card">
 
-                <img class="menu_img" src="images/restaurants/alafrancaise.jpg">
+                <img class="card__img" alt="A la française" src="images/restaurants/alafrancaise.jpg">
 
-                <form class="menu_carte">
+                <form class="card__menu">
 
-                    <div class="menu_carte-top-align">
+                    <div class="card__topLine">
 
                         <h1>A la française</h1>
                         <div class="heart-container menu_heart_container">
@@ -36,150 +56,171 @@
                     <div class="line-layout">
 
 
-                        <section class="menu_categories">
+                        <div class="card__categories">
                             
-                            <div class="menu_categories_title"><p>ENTREES</p>
-                                <div class="menu_categories_underline"></div>
+                            <div class="card__categories__title">
+                                <span class="menu__section">ENTREES</span>
+                                <div class="card__categories__underline"></div>
                             </div>
                             
+                            <div class="btn__menu__meals">
 
-                            <label for="tartarepoulpe" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Tartare de poulpe acidulé</h4>
-                                        <p>Aux zestes d'orange</p>
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
                                     </div>
-                                    <div class="menu_block_text_price"><h4>25€</h4></div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                            </label>
-
-                            <label for="velouteantan" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>
-                                            Velouté de légumes d'antan</h4>
-                                        <p>Carotte, panais, topinambour</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>35€</h4></div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
                                 </div>
-                            </label>
-
-                            <label for="soupe" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Soupe à l'oignon</h4>
-                                        <p>Revisitée</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>20€</h4></div>
-                                </div>
-                            </label>
-                        </section>
-
-                            <section class="menu_categories">
-                            
-                                <div class="menu_categories_title"><p>PLATS</p>
-                                    <div class="menu_categories_underline"></div>
-                                </div>
-
-                            <label for="saintjacques" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Coquilles Saint-Jacques</h4>
-                                        <p>Accompagnées d'une purée de panais</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>40€</h4></div>
-                                </div>
-                            </label>
-
-                            <label for="magret" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Magret de canard</h4>
-                                        <p>Et parmentier de pommes de terre</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>35€</h4></div>
-                                </div>
-                            </label>
-
-                            <label for="pigeonneau" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
-
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                                        <p>Sur son lit de gnocchis aux légumes</p>
-                                    </div>
-                                    <div class="menu_block_text_price"><h4>44€</h4></div>
-                                </div>
-                            </label>
-
-                        </section>
-
-                        <section class="menu_categories">
                         
-                            <div class="menu_categories_title"><p>DESSERTS</p>
-                                <div class="menu_categories_underline"></div>
                             </div>
 
-                            <label for="petales" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
+                            <div class="btn__menu__meals">
 
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Pétales de violettes glacés</h4>
-                                        <p>Et purée de noisettes</p>
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
                                     </div>
-                                    <div class="menu_block_text_price"><h4>18€</h4></div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                            </label>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
 
-                            <label for="fondant" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
+                            <div class="btn__menu__meals">
 
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Fondant au chocolat</h4>
-                                        <p>Revisité</p>
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
                                     </div>
-                                    <div class="menu_block_text_price"><h4>22€</h4></div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                            </label>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+                            
+                        </div>
 
-                            <label for="millefeuille" class="menu_block">
-                                <input type="checkbox" id="ravioles" name="la-note-enchantee">
-                                <i class="fas fa-check-circle fa-lg"></i>
+                        <div class="card__categories">
+                            
+                            <div class="card__categories__title">
+                                <span class="menu__section">ENTREES</span>
+                                <div class="card__categories__underline"></div>
+                            </div>
 
-                                <div class="menu_block_text">
-                                    <div class="menu_block_text_plats">
-                                        <h4>Millefeuille croustillant</h4>
-                                        <p>Myrtilles et pâte d’amande</p>
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
                                     </div>
-                                    <div class="menu_block_text_price"><h4>23€</h4></div>
+                                    <div class="typo__menu__price">25€</div>
                                 </div>
-                            </label>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+                        </div>
+
+
+                        <div class="card__categories">
+                        
+                            <div class="card__categories__title">
+                                <span class="menu__section">ENTREES</span>
+                                <div class="card__categories__underline"></div>
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+                            
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
+
+                            <div class="btn__menu__meals">
+
+                                <div class="bloc__text__animation">
+                                    <div class="bloc__menu__text">
+                                            <span class="typo__menu__title">Tartare de poulpe hhhhhhfhhhhhhhhhacidulé<br></span>
+                                            <span class="typo__menu__details">Aux zesvvvvvrjjjjjjjjrrrrvvtes d'orange</span>
+                                    </div>
+                                    <div class="typo__menu__price">25€</div>
+                                </div>
+                                <div class="bloc__validation__animation">
+                                    <i class="fas fa-check-circle icon__animation"></i>   
+                                </div>
+                        
+                            </div>
 
 
 
                             
-                        </section>
+                        </div>
 
                     </div>
                     
@@ -188,19 +229,19 @@
                 </form>
 
 
-            </section>
+            </article>
 
         </main>
 
         <footer>
             <section class="footer-content">
-                <p class="footer_elements_bold">ohmyfood</p>
+                <p class="footer__elements__bold">ohmyfood</p>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-utensils"></i></span><a href="">Proposer un restaurant</a></li>
                     <li><span class="fa-li"><i class="fas fa-hands-helping fa-xs"></i></span><a href=""> Devenir partenaire</a></li>
-                    <li class="footer_list_no-puce"><a href="">Mentions légales</a></li>
-                    <li class="footer_list_no-puce"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                    <li class="footer__list__no-puce"><a href="">Mentions légales</a></li>
+                    <li class="footer__list__no-puce"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                 </ul>
             </section>
         </footer>

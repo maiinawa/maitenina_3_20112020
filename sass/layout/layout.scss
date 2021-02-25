@@ -1,6 +1,6 @@
 header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   height: 58px;
   width: 100%;
 
@@ -18,7 +18,7 @@ footer {
   background-color: $footer_background-color;
   color: white;
 
-  .footer_elements_bold {
+  .footer__elements__bold {
     margin-bottom: -15px;
 
     font-family: "Shrikhand";
@@ -37,7 +37,7 @@ footer {
     .fa-ul li {
       padding-left: 5px;
     }
-    .footer_list_no-puce {
+    .footer__list__no-puce {
       list-style: none;
       margin-left: -25px;
     }

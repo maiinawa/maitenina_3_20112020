@@ -22,3 +22,18 @@
     box-shadow: 0 0 25px 6px $secondary-color;
   }
 }
+
+@keyframes loadingPage_animation {
+  from {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: 3;
+  }
+}

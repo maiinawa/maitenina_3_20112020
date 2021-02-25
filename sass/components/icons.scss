@@ -6,6 +6,7 @@
   .heart-solid-container {
     display: inline;
     padding: 5px 1px 0 1px; /*eviter le coeur qui se coupe au hover*/
+    transition: ease 2s;
 
     @include gradient-color-icon;
     content: "\f004";

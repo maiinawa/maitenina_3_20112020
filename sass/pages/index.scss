@@ -16,33 +16,26 @@ p {
 .localisation {
   display: flex;
   height: 46px;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
 
   background-color: $localisation-bar_background-color;
-
+  &_bar {
+    margin: 0 auto;
+    padding: 15px 0;
+  }
   & i {
-    margin-left: 10px;
-    margin-top: -1px;
-    position: relative;
-
     color: #353535;
   }
   .search-bar {
-    width: 37%;
-    margin-left: 15px;
-    padding: 0;
-
+    padding: 0 0 0 15px;
+    width: 150px;
+    color: #353535;
     font-size: 1em;
+    font-weight: 600;
     background-color: transparent;
     outline: none;
     border: none;
-
-    &::placeholder {
-      color: #353535;
-      font-size: 1em;
-      font-weight: 600;
-    }
   }
 }
 
@@ -217,19 +210,9 @@ p {
   .localisation {
     height: 50px;
 
-    & i {
-      margin-left: 170px;
-    }
-
     .search-bar {
-      width: 350px;
-      padding: 0;
-
-      font-size: 1.1em;
-
       &::placeholder {
         color: #353535;
-        font-size: 1.1em;
       }
     }
   }
@@ -284,9 +267,10 @@ p {
     font-size: 1.5em;
   }
 
-  .principal-layout {
+  .wrap__asides__presentation {
     display: flex;
     padding-top: 25px;
+    background-color: white;
   }
   .localisation {
     height: 60px;
@@ -408,13 +392,13 @@ p {
     font-size: 19px;
   }
 
-  .principal-layout,
+  .wrap__asides__presentation,
   .restaurants {
     max-width: 1650px;
     margin: 0 auto;
   }
 
-  .principal-layout {
+  .wrap__asides__presentation {
     justify-content: space-around;
     padding: 28px 100px;
   }
