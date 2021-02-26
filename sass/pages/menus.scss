@@ -93,12 +93,12 @@
     border-bottom-right-radius: 15px;
     width: 15%;
     height: 100%;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 
     .icon__animation {
       margin: 1.3rem auto 0 auto;
       font-size: 1.2rem;
-      transition: all 0.5s ease;
+      transition: all 1s ease;
       color: white;
     }
   }
@@ -110,7 +110,7 @@
   display: flex;
   width: 100%;
   padding: 10px;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   overflow: hidden;
 }
 
@@ -204,11 +204,20 @@ input[type="checkbox"] {
     img {
       height: 400px;
     }
+    .order__button {
+      font-size: 1.5em;
+    }
     &__topLine {
       padding: 26px 40px 0px;
     }
+    .line__layout {
+      display: flex;
+      gap: 10px;
+      justify-content: space-around;
+    }
     &__categories {
-      padding: 40px 15px 0px;
+      width: 33%;
+      padding: 30px 0;
       &__title {
         margin: 0px 0px 40px 0px;
       }
@@ -217,9 +226,6 @@ input[type="checkbox"] {
     .fa-heart {
       font-size: 2.3em;
     }
-  }
-  .order__button {
-    font-size: 1.5em;
   }
 }
 
@@ -241,10 +247,7 @@ input[type="checkbox"] {
     &__topLine {
       justify-content: flex-start;
     }
-    .line__layout {
-      display: flex;
-      justify-content: space-around;
-    }
+
     &__categories {
       padding: 40px 0px 0px;
       width: 31%;
