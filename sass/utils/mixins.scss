@@ -9,17 +9,6 @@
   border-radius: 15px;
 }
 
-@mixin circle {
-  position: absolute;
-  background-color: $primary-color;
-  height: 22px;
-  width: 22px;
-  border-radius: 50%;
-  left: -10px;
-  text-align: center;
-  line-height: 22px;
-}
-
 @mixin button-pink {
   @include pink-violet;
   @include box-shadow();
@@ -34,19 +23,6 @@
   margin: 35px auto;
 }
 
-@mixin valid {
-  margin-left: 20px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  text-align: center;
-  background-color: $third-color;
-  width: 19%;
-}
-@mixin valid-i {
-  padding-top: 22px;
-  color: white;
-}
-
 @mixin pink-violet {
   background: linear-gradient($secondary-color, $primary-color);
 }
@@ -56,8 +32,4 @@
   background: -webkit-linear-gradient($secondary-color, $primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@mixin padding-asides {
-  padding: 41px 12px 42px 19px;
 }

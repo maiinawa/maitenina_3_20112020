@@ -5,15 +5,7 @@
     font-size: 1.6em;
   }
 
-  h4 {
-    font-size: 1em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  &_img {
+  &__img {
     height: 260px;
     object-fit: cover;
   }
@@ -60,27 +52,38 @@
   }
 }
 
-.btn__menu__meals {
-  z-index: 1;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 9px;
-  @include div-squarred(white);
-}
 .typo__menu__price {
   margin: 20px 0 0 10px;
-  background-color: yellow;
 }
+
 .bloc {
-  &__menu__text {
+  /*principal bloc menu*/
+  &__menu {
+    z-index: 1;
+    display: flex;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    position: relative;
+    display: flex;
     width: 100%;
+    border-radius: 15px;
+    margin-bottom: 9px;
+    @include div-squarred(white);
+    &__text {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+  }
+  &__text__animation {
+    z-index: 3;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    transition: all 1s ease;
+    overflow: hidden;
   }
 
   &__validation__animation {
@@ -101,30 +104,24 @@
       transition: all 1s ease;
       color: white;
     }
+    input[type="checkbox"] {
+      display: none;
+    }
   }
 }
-.bloc__text__animation {
-  z-index: 3;
-  border-radius: 15px;
-  background-color: white;
-  display: flex;
-  width: 100%;
-  padding: 10px;
-  transition: all 1s ease;
-  overflow: hidden;
-}
 
-.btn__menu__meals:hover .bloc__text__animation {
-  width: 80.5%;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.btn__menu__meals:hover {
-  & .bloc__validation__animation {
-    border: none;
-    right: 0%;
-    width: 15%;
+.bloc__menu:hover {
+  & .bloc {
+    &__text__animation {
+      width: 80.5%;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    &__validation__animation {
+      border: none;
+      right: 0%;
+      width: 15%;
+    }
   }
   & .icon__animation {
     display: block;
@@ -133,27 +130,11 @@
   }
 }
 
-.order__btn {
-  @include button-pink;
-  display: flex;
-  outline: none;
-  border: none;
-  font-size: 1.2rem;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
 @media screen and (min-width: 500px) {
   .card {
     .fa-heart {
       font-size: 1.7em;
     }
-  }
-  .order__button {
-    margin: 60px auto 35px;
-    font-size: 1.2em;
   }
 }
 
@@ -189,10 +170,6 @@ input[type="checkbox"] {
     .fa-heart {
       font-size: 2em;
     }
-  }
-  .order__button {
-    margin: 90px auto 35px;
-    font-size: 1.2em;
   }
 }
 

@@ -43,3 +43,12 @@
     font-size: 40px;
   }
 }
+
+/*order button on menu pages*/
+.btn__order {
+  @include button-pink;
+  display: flex;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+}
