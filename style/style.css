@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @keyframes slideInUp {
   0% {
-    transform: translateY(40%);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
@@ -107,7 +109,7 @@ h2 {
 .heart__empty {
   position: absolute;
   -webkit-text-stroke: 1px white;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
 }
 .heart__solid {
   opacity: 0;
@@ -115,7 +117,7 @@ h2 {
   background: -webkit-linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.7s ease-in;
+  transition: 0.4s ease-in;
 }
 
 .container__heart:hover .heart__solid {
@@ -167,7 +169,7 @@ h2 {
 /*order button on menu pages*/
 .btn__order {
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
   display: inline-block;
   padding: 12px 20px;
   border-radius: 50px;
@@ -323,7 +325,7 @@ p {
 }
 .presentation a {
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
   display: inline-block;
   padding: 12px 20px;
   border-radius: 50px;
@@ -342,7 +344,7 @@ p {
 .fonctionnement .fonctionnement__mosaic__bloc {
   font-weight: 500;
   position: relative;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
   background-color: #f6f6f6;
   border-radius: 15px;
   padding: 20px;
@@ -392,7 +394,7 @@ p {
   margin-bottom: 15px;
   border-radius: 15px;
   background-color: #ffffff;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
 }
 .restaurants__wrapper .restaurants__mosaic__cards img {
   height: 173px;
@@ -654,7 +656,7 @@ p {
   border-radius: 15px;
   margin-bottom: 9px;
   position: relative;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 15px;
 }
@@ -687,8 +689,8 @@ p {
   transition: all 1s ease;
 }
 .bloc__validation__animation .icon__animation {
-  margin: 1.3rem auto 0 auto;
-  font-size: 1.2rem;
+  margin: 1.2rem auto 0 auto;
+  font-size: 1.4rem;
   transition: all 1s ease;
   color: white;
 }
@@ -708,8 +710,24 @@ p {
 }
 .bloc__menu:hover .icon__animation {
   display: block;
-  margin: 1.3rem auto 0 auto;
+  margin: 1.2rem auto 0 auto;
   transform: rotate(2turn);
+}
+
+.bloc__menu:nth-child(1n) {
+  animation: slideInUp 0s;
+}
+
+.bloc__menu:nth-child(2n) {
+  animation: slideInUp 0.75s;
+}
+
+.bloc__menu:nth-child(3n) {
+  animation: slideInUp 1.4s;
+}
+
+.bloc__menu:nth-child(4n) {
+  animation: slideInUp 2.1s;
 }
 
 @media screen and (min-width: 650px) {
@@ -783,6 +801,15 @@ p {
   }
   .card__categories__title {
     margin: 0px 0px 40px 0px;
+  }
+
+  .bloc__validation__animation .icon__animation {
+    margin: 1.3rem auto 0 auto;
+    font-size: 1.5rem;
+  }
+
+  .bloc__menu:hover .bloc__validation__animation .icon__animation {
+    margin: 1.3rem auto 0 auto;
   }
 }
 
