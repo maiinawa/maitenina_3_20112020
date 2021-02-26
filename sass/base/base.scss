@@ -7,6 +7,7 @@
   width: 100%;
   height: 100vh;
   background-color: $primary-color;
+  opacity: 0;
 
   animation: loadingPage_animation 3s;
 }
@@ -52,10 +53,13 @@ a {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 p {
   margin: 0;
+}
+
+h2 {
+  margin: 0 0 20px 0;
 }

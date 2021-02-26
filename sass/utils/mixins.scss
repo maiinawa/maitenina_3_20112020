@@ -4,7 +4,6 @@
 
 @mixin div-squarred($colour) {
   position: relative;
-  display: flex;
   @include box-shadow();
   background-color: $colour;
   border-radius: 15px;
@@ -28,12 +27,11 @@
   padding: 12px 20px;
   border-radius: 50px;
   white-space: nowrap;
-  font-size: 4vw;
   color: white;
   text-decoration: none;
   font-weight: 400;
   width: fit-content;
-  margin: 25px auto;
+  margin: 35px auto;
 }
 
 @mixin valid {
