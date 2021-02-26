@@ -3,17 +3,17 @@
 }
 
 @mixin div-squarred($colour) {
-  position: relative;
   @include box-shadow();
   background-color: $colour;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 @mixin button-pink {
   @include pink-violet;
   @include box-shadow();
   display: inline-block;
-  padding: 12px 20px;
+  padding: 15px 20px;
   border-radius: 50px;
   white-space: nowrap;
   color: white;
@@ -32,4 +32,10 @@
   background: -webkit-linear-gradient($secondary-color, $primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@mixin text-area-layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
 }

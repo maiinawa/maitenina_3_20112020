@@ -53,7 +53,7 @@
 }
 
 .typo__menu__price {
-  margin: 20px 0 0 10px;
+  margin: 25px 0 0 5px;
 }
 
 .bloc {
@@ -63,7 +63,6 @@
     display: flex;
     overflow: hidden;
     position: relative;
-    display: flex;
     width: 100%;
     border-radius: 15px;
     margin-bottom: 9px;
@@ -76,12 +75,11 @@
     }
   }
   &__text__animation {
+    @include text-area-layout;
     z-index: 3;
     border-radius: 15px;
     background-color: white;
-    display: flex;
     width: 100%;
-    padding: 10px;
     transition: all 1s ease;
     overflow: hidden;
   }
@@ -120,7 +118,7 @@
     &__validation__animation {
       border: none;
       right: 0%;
-      width: 18%;
+      width: 15%;
     }
   }
   & .icon__animation {

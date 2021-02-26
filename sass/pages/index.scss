@@ -59,12 +59,15 @@ p {
   background-color: $white;
 
   .fonctionnement__mosaic__bloc {
-    font-weight: 500;
+    position: relative;
     @include div-squarred(#f6f6f6);
     padding: 20px;
     margin: 25px auto;
     text-align: center;
     max-width: 350px;
+    font-weight: 500;
+    transition: 0.5s ease;
+
     .icon__number {
       position: absolute;
       background-color: $primary-color;
@@ -83,12 +86,13 @@ p {
     .fonctionnement__text {
       i {
         margin: 0 32px 0 0;
+        transition: 0.5s ease;
       }
     }
     &:hover {
-      background-color: #f5edff;
+      background-color: rgba($primary-color, 0.15);
 
-      & > i {
+      i {
         color: $primary-color;
       }
     }
@@ -113,11 +117,8 @@ p {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-
-    border-radius: 15px;
-    background-color: $white;
-    @include box-shadow;
-
+    width: 100%;
+    @include div-squarred(white);
     img {
       height: 173px;
       object-fit: cover;
@@ -139,14 +140,12 @@ p {
       text-align: center;
       color: #008766;
     }
-    .restaurants__mosaic__cards__text {
-      padding: 15px 0px 15px 14px;
-      margin: 0;
+    .restaurants__cards__bottom {
+      @include text-area-layout;
     }
+
     .restaurants__heart {
-      position: absolute;
-      bottom: 25px;
-      right: 16px;
+      padding: 5px;
     }
   }
 }
@@ -154,14 +153,6 @@ p {
 @media screen and (min-width: 500px) {
   .aside__container {
     padding: 50px 19px 19px 21px;
-
-    h1 {
-      padding: 0px 15% 20px 12%;
-    }
-
-    p {
-      padding: 13px 0px 15px 8px;
-    }
   }
 }
 
@@ -234,12 +225,6 @@ p {
           span {
             font-size: 1.2em;
           }
-        }
-
-        .restaurants__heart {
-          position: absolute;
-          bottom: 32px;
-          right: 25px;
         }
       }
     }
