@@ -143,9 +143,9 @@ p {
       padding: 15px 0px 15px 14px;
       margin: 0;
     }
-    .cards_heart_container {
+    .restaurants__heart {
       position: absolute;
-      bottom: 32px;
+      bottom: 25px;
       right: 16px;
     }
   }
@@ -173,12 +173,6 @@ p {
       &::placeholder {
         color: #353535;
       }
-    }
-  }
-
-  .cards_heart_container {
-    i {
-      font-size: 2em;
     }
   }
 }
@@ -242,13 +236,10 @@ p {
           }
         }
 
-        .cards_heart_container {
+        .restaurants__heart {
           position: absolute;
           bottom: 32px;
           right: 25px;
-          i {
-            font-size: 1.7em;
-          }
         }
       }
     }

@@ -96,11 +96,16 @@ h2 {
   margin: 0 0 20px 0;
 }
 
-.heart-solid-container {
+.container__heart__solid {
   display: none;
 }
 
-.heart-container:hover .heart-solid-container {
+.fa-heart {
+  -webkit-text-stroke: 1px white;
+  font-size: 2rem;
+}
+
+.container__heart:hover .container__heart__solid {
   display: inline;
   padding: 5px 1px 0 1px;
   /*eviter le coeur qui se coupe au hover*/
@@ -111,7 +116,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   content: "";
 }
-.heart-container:hover .heart-empty-container {
+.container__heart:hover .container__heart__empty {
   display: none;
   padding: 5px 1px 0 1px;
   /*eviter le coeur qui se coupe au hover*/
@@ -159,7 +164,7 @@ h2 {
 /*order button on menu pages*/
 .btn__order {
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
   display: inline-block;
   padding: 12px 20px;
   border-radius: 50px;
@@ -315,7 +320,7 @@ p {
 }
 .presentation a {
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
   display: inline-block;
   padding: 12px 20px;
   border-radius: 50px;
@@ -334,7 +339,7 @@ p {
 .fonctionnement .fonctionnement__mosaic__bloc {
   font-weight: 500;
   position: relative;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
   background-color: #f6f6f6;
   border-radius: 15px;
   padding: 20px;
@@ -384,7 +389,7 @@ p {
   margin-bottom: 15px;
   border-radius: 15px;
   background-color: #ffffff;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
 }
 .restaurants__wrapper .restaurants__mosaic__cards img {
   height: 173px;
@@ -408,9 +413,9 @@ p {
   padding: 15px 0px 15px 14px;
   margin: 0;
 }
-.restaurants__wrapper .restaurants__mosaic__cards .cards_heart_container {
+.restaurants__wrapper .restaurants__mosaic__cards .restaurants__heart {
   position: absolute;
-  bottom: 32px;
+  bottom: 25px;
   right: 16px;
 }
 
@@ -431,10 +436,6 @@ p {
   }
   .localisation .searchBar::placeholder {
     color: #353535;
-  }
-
-  .cards_heart_container i {
-    font-size: 2em;
   }
 }
 @media screen and (min-width: 700px) {
@@ -494,13 +495,10 @@ p {
   .restaurants__mosaic__cards .restaurants__cards__newtag span {
     font-size: 1.2em;
   }
-  .restaurants__mosaic__cards .cards_heart_container {
+  .restaurants__mosaic__cards .restaurants__heart {
     position: absolute;
     bottom: 32px;
     right: 25px;
-  }
-  .restaurants__mosaic__cards .cards_heart_container i {
-    font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -653,7 +651,7 @@ p {
   border-radius: 15px;
   margin-bottom: 9px;
   position: relative;
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.06);
   background-color: white;
   border-radius: 15px;
 }
@@ -696,35 +694,27 @@ p {
 }
 
 .bloc__menu:hover .bloc__text__animation {
-  width: 80.5%;
+  width: 75%;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .bloc__menu:hover .bloc__validation__animation {
   border: none;
   right: 0%;
-  width: 15%;
+  width: 18%;
 }
 .bloc__menu:hover .icon__animation {
   display: block;
   margin: 1.3rem auto 0 auto;
-  transform: rotate(3turn);
+  transform: rotate(2turn);
 }
 
-@media screen and (min-width: 500px) {
-  .card .fa-heart {
-    font-size: 1.7em;
-  }
-}
 @media screen and (min-width: 650px) {
   .card h1 {
     font-size: 1.6em;
   }
   .card__topLine {
     padding: 0px 20px;
-  }
-  .card .fa-heart {
-    font-size: 1.9em;
   }
 }
 @media screen and (min-width: 800px) {
@@ -739,9 +729,6 @@ p {
   }
   .card__categories {
     padding: 40px 15px 0px;
-  }
-  .card .fa-heart {
-    font-size: 2em;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -769,9 +756,6 @@ p {
   .card__categories__title {
     margin: 0px 0px 40px 0px;
   }
-  .card .fa-heart {
-    font-size: 2.3em;
-  }
 }
 @media screen and (min-width: 1200px) {
   .card {
@@ -796,10 +780,6 @@ p {
   }
   .card__categories__title {
     margin: 0px 0px 40px 0px;
-  }
-
-  .fa-heart {
-    font-size: 2.3em;
   }
 }
 

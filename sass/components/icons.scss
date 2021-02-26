@@ -1,9 +1,13 @@
-.heart-solid-container {
+.container__heart__solid {
   display: none;
 }
+.fa-heart {
+  -webkit-text-stroke: 1px white;
+  font-size: 2rem;
+}
 
-.heart-container:hover {
-  .heart-solid-container {
+.container__heart:hover {
+  .container__heart__solid {
     display: inline;
     padding: 5px 1px 0 1px; /*eviter le coeur qui se coupe au hover*/
     transition: ease 2s;
@@ -11,7 +15,7 @@
     @include gradient-color-icon;
     content: "\f004";
   }
-  .heart-empty-container {
+  .container__heart__empty {
     display: none;
     padding: 5px 1px 0 1px; /*eviter le coeur qui se coupe au hover*/
   }

@@ -113,28 +113,20 @@
 .bloc__menu:hover {
   & .bloc {
     &__text__animation {
-      width: 80.5%;
+      width: 75%;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
     }
     &__validation__animation {
       border: none;
       right: 0%;
-      width: 15%;
+      width: 18%;
     }
   }
   & .icon__animation {
     display: block;
     margin: 1.3rem auto 0 auto;
-    transform: rotate(3turn);
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .card {
-    .fa-heart {
-      font-size: 1.7em;
-    }
+    transform: rotate(2turn);
   }
 }
 
@@ -146,9 +138,6 @@
 
     &__topLine {
       padding: 0px 20px;
-    }
-    .fa-heart {
-      font-size: 1.9em;
     }
   }
 }
@@ -166,9 +155,6 @@
     }
     &__categories {
       padding: 40px 15px 0px;
-    }
-    .fa-heart {
-      font-size: 2em;
     }
   }
 }
@@ -199,10 +185,6 @@
         margin: 0px 0px 40px 0px;
       }
     }
-
-    .fa-heart {
-      font-size: 2.3em;
-    }
   }
 }
 
@@ -232,9 +214,5 @@
         margin: 0px 0px 40px 0px;
       }
     }
-  }
-
-  .fa-heart {
-    font-size: 2.3em;
   }
 }
