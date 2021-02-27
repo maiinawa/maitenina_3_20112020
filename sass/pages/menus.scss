@@ -135,6 +135,9 @@
 .bloc__menu:nth-child(4n) {
   animation: slideInUp 2.1s;
 }
+.bloc__menu:nth-child(5n) {
+  animation: slideInUp 2.85s;
+}
 
 @media screen and (min-width: 650px) {
   .card {
