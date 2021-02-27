@@ -186,7 +186,7 @@ h2 {
 .btn__order {
   display: flex;
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.2);
   padding: 15px 20px;
   border-radius: 50px;
   white-space: nowrap;
@@ -199,10 +199,11 @@ h2 {
   border: none;
   font-size: 1.2rem;
   padding: 15px 50px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 .btn__order:hover {
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
 }
 
 header {
@@ -345,7 +346,7 @@ p {
 }
 .presentation a {
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.2);
   padding: 15px 20px;
   border-radius: 50px;
   white-space: nowrap;
@@ -358,7 +359,7 @@ p {
   transition: 0.3s ease;
 }
 .presentation a:hover {
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
 }
 
 .fonctionnement {
@@ -701,7 +702,7 @@ p {
   transition: all 1s ease;
 }
 .bloc__validation__animation .icon__animation {
-  margin: 1.2rem auto 0 auto;
+  margin: 1.4rem auto 0 auto;
   font-size: 1.4rem;
   transition: all 1s ease;
   color: white;
@@ -722,7 +723,7 @@ p {
 }
 .bloc__menu:hover .icon__animation {
   display: block;
-  margin: 1.2rem auto 0 auto;
+  margin: 1.4rem auto 0 auto;
   transform: rotate(2turn);
 }
 
