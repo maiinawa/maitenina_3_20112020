@@ -465,7 +465,7 @@ p {
     color: #353535;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 675px) {
   .presentation__wrapper {
     display: flex;
     gap: 10px;
@@ -504,23 +504,16 @@ p {
     width: 50%;
   }
 
-  .restaurants__mosaic {
+  .restaurants__wrapper .restaurants__mosaic {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .restaurants__mosaic__cards {
+  .restaurants__wrapper .restaurants__mosaic__cards {
     width: 49%;
   }
-  .restaurants__mosaic__cards img {
+  .restaurants__wrapper .restaurants__mosaic__cards img {
     height: 185px;
-  }
-  .restaurants__mosaic__cards .restaurants__cards__newtag {
-    width: 100px;
-  }
-  .restaurants__mosaic__cards .restaurants__cards__newtag span {
-    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -752,7 +745,20 @@ p {
     font-size: 1.6em;
   }
   .card__topLine {
-    padding: 0px 20px;
+    padding: 0px 20px 20px;
+  }
+  .card .line__layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .card__categories {
+    width: 49%;
+    padding: 15px 0;
+  }
+  .card__categories__title {
+    margin: 0px 0px 40px 0px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -764,9 +770,6 @@ p {
   }
   .card__topLine {
     padding: 10px 30px 0px;
-  }
-  .card__categories {
-    padding: 40px 15px 0px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -780,19 +783,10 @@ p {
     font-size: 1.5em;
   }
   .card__topLine {
-    padding: 26px 40px 0px;
+    padding: 10px 40px;
   }
   .card .line__layout {
-    display: flex;
     gap: 10px;
-    justify-content: space-around;
-  }
-  .card__categories {
-    width: 33%;
-    padding: 30px 0;
-  }
-  .card__categories__title {
-    margin: 0px 0px 40px 0px;
   }
 }
 @media screen and (min-width: 1200px) {

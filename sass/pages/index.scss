@@ -171,7 +171,7 @@ p {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 675px) {
   .presentation__wrapper {
     display: flex;
     gap: 10px;
@@ -211,10 +211,9 @@ p {
     width: 50%;
   }
 
-  .restaurants {
+  .restaurants__wrapper .restaurants {
     &__mosaic {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       &__cards {
@@ -222,12 +221,6 @@ p {
 
         img {
           height: 185px;
-        }
-        .restaurants__cards__newtag {
-          width: 100px;
-          span {
-            font-size: 1.2em;
-          }
         }
       }
     }

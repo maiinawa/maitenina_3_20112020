@@ -146,7 +146,21 @@
     }
 
     &__topLine {
-      padding: 0px 20px;
+      padding: 0px 20px 20px;
+    }
+
+    .line__layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-around;
+    }
+    &__categories {
+      width: 49%;
+      padding: 15px 0;
+      &__title {
+        margin: 0px 0px 40px 0px;
+      }
     }
   }
 }
@@ -161,9 +175,6 @@
     }
     &__topLine {
       padding: 10px 30px 0px;
-    }
-    &__categories {
-      padding: 40px 15px 0px;
     }
   }
 }
@@ -180,19 +191,10 @@
       font-size: 1.5em;
     }
     &__topLine {
-      padding: 26px 40px 0px;
+      padding: 10px 40px;
     }
     .line__layout {
-      display: flex;
       gap: 10px;
-      justify-content: space-around;
-    }
-    &__categories {
-      width: 33%;
-      padding: 30px 0;
-      &__title {
-        margin: 0px 0px 40px 0px;
-      }
     }
   }
 }
