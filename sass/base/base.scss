@@ -54,6 +54,7 @@ a {
 
 h1,
 h3,
+h2,
 h4,
 h5,
 p {
@@ -61,5 +62,21 @@ p {
 }
 
 h2 {
-  margin: 0 0 20px 0;
+  padding: 0px 0px 25px 0px;
+}
+.typo {
+  &__bold {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+  }
+  &__light {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  &__price {
+    margin: 32px 0 0 5px;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
 }

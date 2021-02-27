@@ -87,6 +87,7 @@ a {
 
 h1,
 h3,
+h2,
 h4,
 h5,
 p {
@@ -94,12 +95,27 @@ p {
 }
 
 h2 {
-  margin: 0 0 20px 0;
+  padding: 0px 0px 25px 0px;
+}
+
+.typo__bold {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+.typo__light {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.typo__price {
+  margin: 32px 0 0 5px;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 /*heart icon and hover*/
 .fa-heart {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .container__heart {
@@ -168,9 +184,9 @@ h2 {
 }
 /*order button on menu pages*/
 .btn__order {
+  display: flex;
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
-  display: inline-block;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
   padding: 15px 20px;
   border-radius: 50px;
   white-space: nowrap;
@@ -179,11 +195,14 @@ h2 {
   font-weight: 400;
   width: fit-content;
   margin: 35px auto;
-  display: flex;
   outline: none;
   border: none;
   font-size: 1.2rem;
   padding: 15px 50px;
+  transition: all 0.3s ease;
+}
+.btn__order:hover {
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.4);
 }
 
 header {
@@ -326,8 +345,7 @@ p {
 }
 .presentation a {
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
-  display: inline-block;
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
   padding: 15px 20px;
   border-radius: 50px;
   white-space: nowrap;
@@ -337,6 +355,10 @@ p {
   width: fit-content;
   margin: 35px auto;
   font-size: 1rem;
+  transition: 0.3s ease;
+}
+.presentation a:hover {
+  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.4);
 }
 
 .fonctionnement {
@@ -348,7 +370,7 @@ p {
   background-color: #f6f6f6;
   border-radius: 15px;
   cursor: pointer;
-  padding: 20px;
+  padding: 25px;
   margin: 25px auto;
   text-align: center;
   max-width: 350px;
@@ -386,10 +408,6 @@ p {
   padding: 35px 12px 64px 12px;
   background-color: #f6f6f6;
 }
-.restaurants__wrapper h2 {
-  margin: 0;
-  padding: 0px 0px 15px 0px;
-}
 .restaurants__wrapper .restaurants__mosaic__cards {
   position: relative;
   z-index: 1;
@@ -411,14 +429,18 @@ p {
 .restaurants__wrapper .restaurants__mosaic__cards .restaurants__cards__newtag {
   z-index: 2;
   position: absolute;
-  padding: 10px 10px 10px 10px;
+  padding: 6px;
   top: 13px;
   right: 11px;
   width: 79px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #99e2d0;
   text-align: center;
   color: #008766;
+}
+.restaurants__wrapper .restaurants__mosaic__cards .restaurants__cards__newtag span {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 .restaurants__wrapper .restaurants__mosaic__cards .restaurants__cards__bottom {
   display: flex;
@@ -426,7 +448,7 @@ p {
   padding: 10px 15px;
 }
 .restaurants__wrapper .restaurants__mosaic__cards .restaurants__heart {
-  padding: 5px;
+  padding: 10px 5px 5px 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -631,10 +653,6 @@ p {
   width: 40px;
   bottom: -9px;
   border-top: 3px solid #99e2d0;
-}
-
-.typo__menu__price {
-  margin: 25px 0 0 5px;
 }
 
 .bloc {

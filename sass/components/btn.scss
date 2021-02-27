@@ -47,10 +47,14 @@
 
 /*order button on menu pages*/
 .btn__order {
-  @include button-pink;
   display: flex;
+  @include button-pink;
   outline: none;
   border: none;
   font-size: 1.2rem;
   padding: 15px 50px;
+  transition: all 0.3s ease;
+  &:hover {
+    @include box-shadow-hover;
+  }
 }

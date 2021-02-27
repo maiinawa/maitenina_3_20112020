@@ -1,5 +1,11 @@
 @mixin box-shadow {
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 14px 4px $shadow-light;
+}
+@mixin box-shadow-btn {
+  box-shadow: 1px 1px 14px 4px $shadow-btn;
+}
+@mixin box-shadow-hover {
+  box-shadow: 1px 1px 14px 4px $shadow-dark;
 }
 
 @mixin div-squarred($colour) {
@@ -11,8 +17,7 @@
 
 @mixin button-pink {
   @include pink-violet;
-  @include box-shadow();
-  display: inline-block;
+  @include box-shadow-btn;
   padding: 15px 20px;
   border-radius: 50px;
   white-space: nowrap;
