@@ -1,15 +1,31 @@
+/*shadows variations*/
 @mixin box-shadow {
   box-shadow: 1px 1px 14px 4px $shadow-light;
-}
-@mixin box-shadow-btn {
-  box-shadow: 1px 1px 14px 4px $shadow-btn;
 }
 @mixin box-shadow-hover {
   box-shadow: 1px 1px 14px 4px $shadow-dark;
 }
+@mixin box-shadow-btn {
+  box-shadow: 1px 1px 14px 4px $shadow-btn;
+}
+//------------------------------------
+/*colors */
+@mixin pink-violet {
+  background: linear-gradient($secondary-color, $primary-color);
+}
 
+/*colors variation : lighten */
+@mixin pink-violet-light(
+  $colour1: color-lightnen($secondary-color),
+  $colour2: color-lightnen($primary-color)
+) {
+  background: linear-gradient($colour1, $colour2);
+}
+
+//-----------------------------------
+/*bloc customization variations*/
 @mixin div-squarred($colour) {
-  @include box-shadow();
+  @include box-shadow;
   background-color: $colour;
   border-radius: 15px;
   cursor: pointer;
@@ -26,10 +42,6 @@
   font-weight: 400;
   width: fit-content;
   margin: 35px auto;
-}
-
-@mixin pink-violet {
-  background: linear-gradient($secondary-color, $primary-color);
 }
 
 @mixin gradient-color-icon {

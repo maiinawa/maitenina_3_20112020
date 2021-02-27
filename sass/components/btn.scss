@@ -1,3 +1,4 @@
+/*button goback on menu pages*/
 .goback {
   position: absolute;
   top: 20px;
@@ -54,8 +55,9 @@
   font-size: 1.2rem;
   padding: 15px 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   &:hover {
     @include box-shadow-hover;
+    @include pink-violet-light;
   }
 }

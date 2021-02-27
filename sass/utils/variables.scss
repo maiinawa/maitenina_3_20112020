@@ -11,3 +11,11 @@ $footer_background-color: #353535;
 $shadow-light: rgba(0, 0, 0, 0.1);
 $shadow-btn: rgba(0, 0, 0, 0.2);
 $shadow-dark: rgba(0, 0, 0, 0.3);
+
+@mixin primary-light {
+  @debug lighten($primary-color, 30%);
+}
+
+@mixin secondary-light {
+  @debug lighten($secondary-color, 30%);
+}

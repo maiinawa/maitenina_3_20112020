@@ -16,9 +16,6 @@ p {
 .localisation {
   display: flex;
   height: 46px;
-  /*justify-content: center;
-  align-items: center;*/
-
   background-color: $localisation-bar_background-color;
   &_bar {
     margin: 0 auto;
@@ -55,6 +52,7 @@ p {
     transition: 0.3s ease;
     &:hover {
       @include box-shadow-hover;
+      @include pink-violet-light;
     }
   }
 }
