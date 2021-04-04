@@ -157,17 +157,6 @@ p {
   }
 }
 
-@media screen and (min-width: 650px) {
-  .localisation {
-    height: 50px;
-
-    .searchBar {
-      &::placeholder {
-        color: #353535;
-      }
-    }
-  }
-}
 
 @media screen and (min-width: 675px) {
   .presentation__wrapper {
@@ -176,27 +165,27 @@ p {
   }
   .presentation {
     background-color: white;
-    margin: 35px 0 0 0;
+    & h2{
+      margin: 0 0 30px 0;
+
+    }
   }
   .fonctionnement h2 {
     text-align: center;
+    
   }
   .localisation {
-    height: 60px;
 
     & i {
       margin-left: 140px;
-
-      font-size: 1.5em;
     }
 
     .searchBar {
       width: 350px;
 
-      font-size: 1.2em;
+      font-size: 1em;
 
       &::placeholder {
-        color: #353535;
         font-size: 1.2em;
       }
     }
@@ -225,9 +214,11 @@ p {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .restaurants__cards__newtag {
     width: 125px;
+  }
+  .presentation p{
   }
 }
 
@@ -260,22 +251,13 @@ p {
     padding: 28px 100px;
   }
   .localisation {
-    height: 60px;
-
     & i {
       margin-left: 90px;
 
-      font-size: 22px;
     }
 
     .searchBar {
       padding-left: 19px;
-
-      font-size: 26px;
-
-      &::placeholder {
-        font-size: 26px;
-      }
     }
   }
   .asideLeft {

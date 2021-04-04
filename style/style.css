@@ -104,7 +104,7 @@ h2 {
 
 .typo__bold {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.9rem;
 }
 .typo__light {
@@ -270,15 +270,7 @@ footer .fa-ul .footer__list__no-puce {
   margin-left: -25px;
 }
 
-@media screen and (min-width: 800px) {
-  footer__elements__bold {
-    font-size: 1.8em;
-  }
-  footer a {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   footer {
     display: flex;
     margin: auto;
@@ -462,14 +454,6 @@ p {
     padding: 50px 19px 19px 21px;
   }
 }
-@media screen and (min-width: 650px) {
-  .localisation {
-    height: 50px;
-  }
-  .localisation .searchBar::placeholder {
-    color: #353535;
-  }
-}
 @media screen and (min-width: 675px) {
   .presentation__wrapper {
     display: flex;
@@ -478,26 +462,23 @@ p {
 
   .presentation {
     background-color: white;
-    margin: 35px 0 0 0;
+  }
+  .presentation h2 {
+    margin: 0 0 30px 0;
   }
 
   .fonctionnement h2 {
     text-align: center;
   }
 
-  .localisation {
-    height: 60px;
-  }
   .localisation i {
     margin-left: 140px;
-    font-size: 1.5em;
   }
   .localisation .searchBar {
     width: 350px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .localisation .searchBar::placeholder {
-    color: #353535;
     font-size: 1.2em;
   }
 
@@ -521,7 +502,7 @@ p {
     height: 185px;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .restaurants__cards__newtag {
     width: 125px;
   }
@@ -558,19 +539,11 @@ p {
     padding: 28px 100px;
   }
 
-  .localisation {
-    height: 60px;
-  }
   .localisation i {
     margin-left: 90px;
-    font-size: 22px;
   }
   .localisation .searchBar {
     padding-left: 19px;
-    font-size: 26px;
-  }
-  .localisation .searchBar::placeholder {
-    font-size: 26px;
   }
 
   .asideLeft {

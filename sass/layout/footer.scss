@@ -29,18 +29,8 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px) {
-  footer {
-    &__elements__bold {
-      font-size: 1.8em;
-    }
-    a {
-      font-size: 1.2em;
-    }
-  }
-}
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   footer {
     .footer__content {
       margin: 0 auto;
