@@ -1,18 +1,3 @@
-h1 {
-  font-size: 1.8em;
-}
-
-h2 {
-  font-size: 1.4em;
-}
-h3 {
-  font-size: 1.2em;
-}
-
-p {
-  font-size: 1.1em;
-}
-
 .localisation {
   display: flex;
   height: 46px;
@@ -60,7 +45,7 @@ p {
 .fonctionnement {
   background-color: $white;
 
-  .fonctionnement__mosaic__bloc {
+  &__mosaic__bloc {
     position: relative;
     @include div-squarred(#f6f6f6);
     padding: 25px;
@@ -101,14 +86,17 @@ p {
   }
 }
 
-.restaurants__wrapper {
+
+//faire attention a nommer avec &__ normalement ca bug pas
+.restaurants{
+  &__wrapper {
   display: flex;
   flex-direction: column;
   padding: 35px 12px 64px 12px;
 
   background-color: $grey;
-
-  .restaurants__mosaic__cards {
+  }
+  &__mosaic__cards {
     position: relative;
     z-index: 1;
     display: flex;
@@ -123,7 +111,8 @@ p {
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
     }
-    .restaurants__cards__newtag {
+  }
+  &__cards__newtag {
       z-index: 2;
       position: absolute;
       padding: 6px;
@@ -141,14 +130,14 @@ p {
         font-weight: 500;
       }
     }
-    .restaurants__cards__bottom {
+    &__cards__bottom {
       @include text-area-layout;
     }
 
-    .restaurants__heart {
+    &__heart {
       padding: 10px 5px 5px 5px;
     }
-  }
+  
 }
 
 @media screen and (min-width: 500px) {
@@ -159,23 +148,22 @@ p {
 
 
 @media screen and (min-width: 675px) {
-  .presentation__wrapper {
+
+  .presentation{
+    background-color: white;
+    h2{
+      margin: 0 0 30px 0;
+    }
+    &__wrapper {
     display: flex;
     gap: 10px;
   }
-  .presentation {
-    background-color: white;
-    & h2{
-      margin: 0 0 30px 0;
+}
 
-    }
-  }
   .fonctionnement h2 {
     text-align: center;
-    
   }
   .localisation {
-
     & i {
       margin-left: 140px;
     }
@@ -217,8 +205,6 @@ p {
 @media screen and (min-width: 900px) {
   .restaurants__cards__newtag {
     width: 125px;
-  }
-  .presentation p{
   }
 }
 
@@ -281,11 +267,11 @@ p {
   }
 
   .fonctionnement {
-    h2 {
+    & h2 {
       text-align: center;
     }
 
-    .fonctionnement__mosaic__bloc {
+    &__mosaic__bloc {
       font-weight: 400;
       width: 100%;
     }

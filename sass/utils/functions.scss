@@ -1,9 +1,11 @@
-@function color-lightnen($colour) {
-  //take a $colour as an argument
-  @if (lightness($colour) < 100%) {
-    //if $colour is not white
-    @return lighten($colour, 2%); // light the $colour of 2%
-  } @else {
-    @return $colour; //else, print the $colour
-  }
-}
+// @function color-lightnen($colour) {
+//   //take a $colour as an argument
+//   @if (lightness($colour) < 100%) {
+//     //if $colour is not white
+//     @return lighten($colour, 4%); // light the $colour of 2%
+//   } @else {
+//     @return $colour; //else, return the $colour
+//   }
+// }
+
+//tentative fonction, mais inutile car lighten le fait tres bien en l'intégrant en parametre d'une mixin

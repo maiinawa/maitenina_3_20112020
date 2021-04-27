@@ -16,8 +16,8 @@
 
 /*colors variation : lighten */
 @mixin pink-violet-light(
-  $colour1: color-lightnen($secondary-color),
-  $colour2: color-lightnen($primary-color)
+  $colour1: lighten($secondary-color, 4%),
+  $colour2: lighten($primary-color, 4%)
 ) {
   background: linear-gradient($colour1, $colour2);
 }
@@ -44,6 +44,7 @@
   margin: 35px auto;
 }
 
+//heart icon
 @mixin gradient-color-icon {
   display: block;
   background: -webkit-linear-gradient($secondary-color, $primary-color);
@@ -51,6 +52,7 @@
   -webkit-text-fill-color: transparent;
 }
 
+//text area within restaurants cards and meals
 @mixin text-area-layout {
   display: flex;
   justify-content: space-between;

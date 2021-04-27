@@ -22,7 +22,7 @@
   border-radius: 50%;
   box-shadow: 0 0 25px 6px $primary-color;
 
-  animation: loader 2.5s linear infinite;
+  animation: spinning-loader  2.5s linear infinite;
 }
 
 body {
@@ -51,6 +51,22 @@ a {
   text-decoration: none;
   color: black;
 }
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
 
 h1,
 h3,

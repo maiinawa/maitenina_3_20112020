@@ -16,7 +16,7 @@
     opacity: 1;
   }
 }
-@keyframes loader {
+@keyframes spinning-loader {
   from {
     transform: rotate(0deg);
   }
@@ -61,7 +61,7 @@
   border-right-color: transparent;
   border-radius: 50%;
   box-shadow: 0 0 25px 6px #9356dc;
-  animation: loader 2.5s linear infinite;
+  animation: spinning-loader 2.5s linear infinite;
 }
 
 body {
@@ -87,6 +87,22 @@ img {
 a {
   text-decoration: none;
   color: black;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 h1,
@@ -209,7 +225,7 @@ h2 {
 }
 .btn__order:hover {
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(#ff83dd, #985ede);
+  background: linear-gradient(#ff8de0, #9e67e0);
 }
 
 header {
@@ -290,22 +306,6 @@ footer .fa-ul .footer__list__no-puce {
     padding: 15px 80px 0px 80px;
   }
 }
-h1 {
-  font-size: 1.8em;
-}
-
-h2 {
-  font-size: 1.4em;
-}
-
-h3 {
-  font-size: 1.2em;
-}
-
-p {
-  font-size: 1.1em;
-}
-
 .localisation {
   display: flex;
   height: 46px;
@@ -356,13 +356,13 @@ p {
 }
 .presentation a:hover {
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(#ff83dd, #985ede);
+  background: linear-gradient(#ff8de0, #9e67e0);
 }
 
 .fonctionnement {
   background-color: #ffffff;
 }
-.fonctionnement .fonctionnement__mosaic__bloc {
+.fonctionnement__mosaic__bloc {
   position: relative;
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.1);
   background-color: #f6f6f6;
@@ -375,7 +375,7 @@ p {
   font-weight: 500;
   transition: 0.5s ease;
 }
-.fonctionnement .fonctionnement__mosaic__bloc .icon__number {
+.fonctionnement__mosaic__bloc .icon__number {
   position: absolute;
   background-color: #9356dc;
   height: 22px;
@@ -385,18 +385,18 @@ p {
   text-align: center;
   line-height: 22px;
 }
-.fonctionnement .fonctionnement__mosaic__bloc .icon__number span {
+.fonctionnement__mosaic__bloc .icon__number span {
   font-size: 0.9em;
   color: white;
 }
-.fonctionnement .fonctionnement__mosaic__bloc .fonctionnement__text i {
+.fonctionnement__mosaic__bloc .fonctionnement__text i {
   margin: 0 32px 0 0;
   transition: 0.5s ease;
 }
-.fonctionnement .fonctionnement__mosaic__bloc:hover {
+.fonctionnement__mosaic__bloc:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
-.fonctionnement .fonctionnement__mosaic__bloc:hover i {
+.fonctionnement__mosaic__bloc:hover i {
   color: #9356dc;
 }
 
@@ -406,7 +406,7 @@ p {
   padding: 35px 12px 64px 12px;
   background-color: #f6f6f6;
 }
-.restaurants__wrapper .restaurants__mosaic__cards {
+.restaurants__mosaic__cards {
   position: relative;
   z-index: 1;
   display: flex;
@@ -418,13 +418,13 @@ p {
   border-radius: 15px;
   cursor: pointer;
 }
-.restaurants__wrapper .restaurants__mosaic__cards img {
+.restaurants__mosaic__cards img {
   height: 173px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurants__wrapper .restaurants__mosaic__cards .restaurants__cards__newtag {
+.restaurants__cards__newtag {
   z-index: 2;
   position: absolute;
   padding: 6px;
@@ -436,16 +436,16 @@ p {
   text-align: center;
   color: #008766;
 }
-.restaurants__wrapper .restaurants__mosaic__cards .restaurants__cards__newtag span {
+.restaurants__cards__newtag span {
   font-size: 0.9rem;
   font-weight: 500;
 }
-.restaurants__wrapper .restaurants__mosaic__cards .restaurants__cards__bottom {
+.restaurants__cards__bottom {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
 }
-.restaurants__wrapper .restaurants__mosaic__cards .restaurants__heart {
+.restaurants__heart {
   padding: 10px 5px 5px 5px;
 }
 
@@ -455,16 +455,15 @@ p {
   }
 }
 @media screen and (min-width: 675px) {
-  .presentation__wrapper {
-    display: flex;
-    gap: 10px;
-  }
-
   .presentation {
     background-color: white;
   }
   .presentation h2 {
     margin: 0 0 30px 0;
+  }
+  .presentation__wrapper {
+    display: flex;
+    gap: 10px;
   }
 
   .fonctionnement h2 {
@@ -567,7 +566,7 @@ p {
   .fonctionnement h2 {
     text-align: center;
   }
-  .fonctionnement .fonctionnement__mosaic__bloc {
+  .fonctionnement__mosaic__bloc {
     font-weight: 400;
     width: 100%;
   }
