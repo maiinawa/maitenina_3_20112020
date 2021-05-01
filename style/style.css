@@ -489,15 +489,15 @@ footer .fa-ul .footer__list__no-puce {
     width: 50%;
   }
 
-  .restaurants__wrapper .restaurants__mosaic {
+  .restaurants__mosaic {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .restaurants__wrapper .restaurants__mosaic__cards {
+  .restaurants__mosaic__cards {
     width: 49%;
   }
-  .restaurants__wrapper .restaurants__mosaic__cards img {
+  .restaurants__mosaic__cards img {
     height: 185px;
   }
 }
@@ -577,7 +577,7 @@ footer .fa-ul .footer__list__no-puce {
   .restaurants__wrapper h2 {
     padding: 0px 20px 20px;
   }
-  .restaurants__wrapper .restaurants__mosaic__cards {
+  .restaurants__mosaic__cards {
     width: 24%;
     margin-bottom: 0px;
   }
